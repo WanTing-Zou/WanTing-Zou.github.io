@@ -3,16 +3,349 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="/css/style.css" media="screen" rel="stylesheet" type="text/css">
+    <title>休閒農業 │ 首頁</title>
+    <link href="/dev/css/index.css" media="screen" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
-<!-- <style>
-    h2{
-    background-color: aqua;
-}
-</style> -->
 <body>
-    <h1>hello</h1>
-    <h2>test</h2>
+    <div class="header">        
+        <ul class="menu">
+          <li><a href="#">關於休閒農業<br><span>ABOUT</span></a></li>
+          <li><a href="#">最新消息<br><span>NEWS</span></a></li>
+          <li><a href="#">主題農遊<br><span>THEME TRAVEL</span></a></li>
+          <li><a href="#">在地美食<br><span>LOCAL CUISINE</span></a></li>
+          <li><a href="#">伴手禮推薦<br><span>SOUVENIR</span></a></li>
+          <li><a href="#">影音專區<br><span>TVIDEO AND AUDIO</span></a></li>
+          <li><a href="#">好站連結<br><span>LINK</span></a></li>
+        </ul>
+        <a href="#" class="showmenu">
+            <img src="./images/hamburger.png" alt="">
+        </a>
+    </div>
+
+    <div class="banner_block">
+        <div class="banners">
+            <div class="banner">
+                <img src="./images/banner.jpg" alt="">
+            </div>
+            <div class="aside_icon">
+                <img src="./images/icones_btn.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <main id="main">
+        <div class="travel_block">
+            <div class="treme_title">
+                <img src="./images/theme-trave_ltitleL.png" alt="">
+            </div>
+            <div class="top"></div>
+            <div class="travel_introduction">
+                <div class="left_infor">
+                    <div class="place_intro">
+                        <div class="picture">
+                            <img src="./images/theme-travel_picture.jpg" alt="">
+                        </div>
+                        <div class="introduction">
+                            <h2>西湖溪岸柚飄香</h2>
+                            <p>採柚子樂趣。採柚子樂悠悠採柚子樂悠悠採柚子樂悠悠
+                                採柚子樂悠悠採柚子樂悠悠採柚子樂悠悠採柚子樂悠悠
+                                採柚子樂悠悠採柚子樂悠悠採柚子樂悠悠採柚子樂悠悠。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="picture_change">
+                        <ul class="pic_btn">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="right_infor">
+                    <div class="theme01">
+                        <h3>01</h3>
+                        <hr>
+                        <a href=""><p>主題旅遊</p></a>
+                    </div>
+                    <div class="place02">
+                        <h3>02</h3>
+                        <hr>
+                        <a href=""><p>景點介紹</p></a>
+                    </div>
+                    <div class="agriculture03">
+                        <h3>03</h3>
+                        <hr>
+                        <a href=""><p>休閒農業</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="aboutus">
+            <div class="bgc_img">
+                <div class="abou_infor">
+                    <div class="infor_text">
+                        <h2>關於休閒農事</h2>
+                        <p>休閒農業是指利用田園景觀、自然生態及環境資源，結合農林漁牧生產、農業經營活動、農村文化及農家生活，提供國民休閒，增進國民對農業提農村體豔為目的之農業經營。換言之，休閒農業所表現的是結合生產、生活與生態三生一體的事業，在經營上更是結合了農業產銷、產產加工及遊憩服務等三級產業於一體的農企業。</p>
+                        <div class="all_btn">
+                            <button>
+                                <p>ALL INFORMATION</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="news_block">
+            <div class="news_bgc"></div>
+            <div class="news_title">
+                <img src="./images/news_titleL.png" alt="">
+            </div>
+
+            <div class="travel_list">
+                <ul class="travel_infor">
+                    <li class="news_list">
+                        <a href="#">
+                            <div class="news">
+                                <div class="tags">
+                                    <h2>18</h2>
+                                    <p>JUNE</p>
+                                    <p>2019</p>
+                                </div>
+    
+                                <div class="list_pic">
+                                    <img src="./images/news01.jpg" alt="">
+                                    <div class="text">
+                                        <div class="triangle"></div>
+                                        <p>大湖採草莓季開跑，大湖採草莓、品嘗客家美食、享受泡湯樂趣</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="news_list">
+                        <a href="#">
+                            <div class="news">
+                                <div class="tags">
+                                    <h2>18</h2>
+                                    <p>JUNE</p>
+                                    <p>2019</p>
+                                </div>
+    
+                                <div class="list_pic">
+                                    <img src="./images/news02.jpg" alt="">
+                                    <div class="text">
+                                        <div class="triangle"></div>
+                                        <p>大湖採草莓季開跑，大湖採草莓、品嘗客家美食、享受泡湯樂趣</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="news_list">
+                        <a href="#">
+                            <div class="news">
+                                <div class="tags">
+                                    <h2>18</h2>
+                                    <p>JUNE</p>
+                                    <p>2019</p>
+                                </div>
+    
+                                <div class="list_pic">
+                                    <img src="./images/news03.jpg" alt="">
+                                    <div class="text">
+                                        <div class="triangle"></div>
+                                        <p>大湖採草莓季開跑，大湖採草莓、品嘗客家美食、享受泡湯樂趣</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="videos_block">
+            <div class="videos_title">
+                <img src="./images/video_titleL.png" alt="">
+            </div>
+            <div class="videos">
+                <div class="movie">
+                    <div class="movie_pic">
+                        <img src="./images/videos_left.jpg" alt="">
+                    </div>
+
+                    <div class="icons">
+                        <div class="subtitle">
+                            <div class="number">
+                                <h1>03</h1>
+                                <div class="date">
+                                    <p>JAN</p>
+                                    <p>2019</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="players">
+                            <div class="icon">
+                                <img src="" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie_middle">
+                    <div class="middle01">
+                        <img src="./images/videos_middle01.jpg" alt="">
+
+                        <div class="icons">
+                            <div class="subtitle">
+                                <div class="number">
+                                    <h1>03</h1>
+                                    <div class="date">
+                                        <p>JAN</p>
+                                        <p>2019</p>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="players">
+                                <div class="icon">
+                                    <img src="" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="middle02">
+                        <img src="./images/videos_middle02.jpg" alt="">
+
+                        <div class="icons">
+                            <div class="subtitle">
+                                <div class="number">
+                                    <h1>03</h1>
+                                    <div class="date">
+                                        <p>JAN</p>
+                                        <p>2019</p>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="players">
+                                <div class="icon">
+                                    <img src="" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie">
+                    <div class="movie_pic">
+                        <img src="./images/videos_left.jpg" alt="">
+                    </div>
+
+                    <div class="icons">
+                        <div class="subtitle">
+                            <div class="number">
+                                <h1>03</h1>
+                                <div class="date">
+                                    <p>JAN</p>
+                                    <p>2019</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="players">
+                            <div class="icon">
+                                <img src="" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ad_block">
+            <div class="ad">
+                <a href="#">
+                    <div class="logos">
+                        <img src="./images/ad01.png" alt="">
+                    </div>
+                    <div class="logo_name">
+                        <p>苗栗購夠GO</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="ad">
+                <a href="#">
+                    <div class="logos">
+                        <img src="./images/ad02.png" alt="">
+                    </div>
+                    <div class="logo_name">
+                        <p>農業易遊網</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="ad">
+                <a href="#">
+                    <div class="logos">
+                        <img src="./images/ad03.png" alt="">
+                    </div>
+                    <div class="logo_name">
+                        <p>貓裹老時味</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footer">
+            <div class="footer_infor">
+                <div class="ft_text">
+                    <p>SHARE WITH<br>
+                    YOUR FRIENDS</p>
+                </div>
+
+                <div class="group_link">
+                    <img src="./images/group.png" alt="">
+                </div>
+                <div class="footer_link">
+                    <a href="#"><p>好站連結│</p></a>
+                    <a href="#"><p>下載專區│</p></a>
+                    <a href="#"><p>網站導覽</p></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <link rel="stylesheet" href="./js/jquery-3.5.1.js">
+    <link rel="stylesheet" href="./js/jquery.min.js">
+    <link rel="stylesheet" href="./js/vue.js">
+    <link rel="stylesheet" href="./js/vue.min.js">
+    <link rel="stylesheet" href="./js/fa5.14.0all.js">
+    <link rel="stylesheet" href="./js/sweetalert.min.js">
+
+    <script>
+        $(document).ready(function() {
+            $('.showmenu').on('click', function(event) {
+            event.preventDefault();
+        $('body').toggleClass('menu-show');
+        });
+    });
+    </script>
+
 </body>
 </html>

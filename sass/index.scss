@@ -1,0 +1,599 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', Helvetica , "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei",Arial,sans-serif;
+    }
+    
+    ul{
+        list-style: none;
+        a:link{
+            text-decoration: none; 
+            color: black;
+        }
+    }
+    .header{
+        height: 80px;
+        position: relative;
+    }
+    .menu{
+        float: right;
+        text-align: center;
+        margin: 0px 3%;
+        li{
+            float: left;
+            line-height: 25px;
+            a{
+                display: block;
+                color: #313131;
+                text-decoration: none;
+                padding: 1em;
+                span{
+                    font-size: 8px;
+                }
+            }
+        }
+    }
+    ul.menu a:hover{
+        background-color: #69CA62;
+        color: white;
+    }
+    /*在PC上隱藏漢堡選單*/
+    .showmenu{
+        display: none;
+    }
+    .banner_block{
+        position: relative;
+        .banners{
+            .banner{
+                width: 100%;
+                height: 360px;
+                overflow: hidden;
+                position: relative;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .aside_icon{
+                position: absolute;
+                top: 80px;
+                right: 0;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    #main{
+        // border: 3px solid palegreen;
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+
+        .travel_block{
+            margin-top: 5%;
+            .treme_title{
+                text-align: center;
+                img{
+                    width: 80%;
+                }
+            }
+        }
+        .top{
+            height: 130px;
+            // border: 2px solid khaki;
+        }
+
+        .travel_introduction{
+            // border: 2px solid orange;
+            display: flex;
+            .left_infor{
+                width: 70%;
+                background-color: #f5f5f5;
+                box-shadow: rgba(106, 106, 106, 0.35) 5px 12px 30px 15px;
+                .place_intro{
+                    display: flex;
+                    justify-content: flex-end;
+                    position: relative;
+                    .picture{
+                        position: absolute;
+                        bottom: 10px;
+                        left: 90px;
+                        img{
+                            width: 280px;
+                        }
+                    }
+                    .introduction{
+                        width: 45%;
+                        padding: 30px;
+                        h2{
+                            line-height: 50px;
+                        }
+                        p{
+                            line-height: 30px;
+                        }
+                    }
+                }
+                .picture_change{
+                    .pic_btn{
+                        display: flex;
+                        justify-content: center;
+                        li{
+                            width: 12px;
+                            height: 12px;
+                            background-color: rgb(191, 191, 191);
+                            margin: 5px;
+                        }
+                    }
+                }
+            }
+            .right_infor{
+                display: flex;
+                padding: 10px;
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+                .theme01{
+                    margin: 0px 8px;
+                    background-color: #f5fdf0;
+                    padding: 10px;
+                    p{
+                        writing-mode: vertical-rl;
+                        letter-spacing: 10px;
+                        margin-top: 30px;
+                    }
+                }
+                .place02{   
+                    margin: 0px 8px;
+                    background-color: #f5fdf0;
+                    padding: 10px;
+                    p{
+                        writing-mode: vertical-rl;
+                        letter-spacing: 10px;
+                        margin-top: 30px;
+                    }
+                }
+                .agriculture03{
+                    margin: 0px 8px;
+                    background-color: #f5fdf0;
+                    padding: 10px;
+                    p{
+                        writing-mode: vertical-rl;
+                        letter-spacing: 10px;
+                        margin-top: 30px;
+                    }
+                }
+                // width: 40%;
+            }
+        }
+
+        .aboutus{
+            .bgc_img{
+                background-image: url("../../images/aboutus_bgc.jpg");
+                background-attachment: fixed;
+                background-size: cover;
+                width:100%;
+                .abou_infor{
+                    .infor_text{
+                        width: 900px;
+                        max-width: 100%;
+                        margin: 6% auto;
+                        padding: 20px;
+                        color: white;
+                        h2{
+                            text-align: center;
+                            line-height: 100px;
+                        }
+                        p{
+                            line-height: 30px;
+                        }
+                        .all_btn{
+                            button{
+                                padding: 10px;
+                                border-radius: 50px;
+                                width: 220px;
+                                border: 1px solid rgb(255, 255, 255);
+                                color: white;
+                                background-color: #f5f5f500;
+                                cursor: pointer;
+                            }
+                            text-align: center;
+                            padding: 30px;
+                        }
+                    }
+                }
+            }
+        }
+        .news_block{
+            .news_title{
+                text-align: center;
+                margin: 3% 0px;
+                img{
+                    width: 80%;
+                }
+            }
+            .travel_list{
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+                .travel_infor{
+                    display: flex;
+                    justify-content: space-around;
+                }
+                .news_list{
+                    width: 25%;
+                    .news{
+                        position: relative;
+                        .tags{
+                            position: absolute;
+                            background-color: #fff;
+                            width: 60px;
+                            height: 80px;
+                            left: 10px;
+                            top: 10px;
+                            text-align: center;
+                        }
+                        .list_pic{
+                            max-height: 100%;
+                            overflow: hidden;
+                            align-items: center;
+                            justify-content: center;
+                            object-fit: cover;
+                            .text{
+                                transform: translateY(-40px);
+                                .triangle{
+                                    display: block;
+                                    margin-left: 30px;
+                                    width: 0;
+                                    height: 0;
+                                    border-style: solid;
+                                    border-width: 0 20px 22px 20px;
+                                    border-color: transparent transparent #f5fdf0 transparent;
+                                }
+                                p{
+                                    background-color:#f5fdf0;
+                                    line-height: 30px;
+                                    padding: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .videos_block{
+            .videos_title{
+                text-align: center;
+                margin: 3% 0px;
+                img{
+                    width: 80%;
+                }
+            }
+            .videos{
+                display: flex;
+                justify-content: center;
+                .movie{
+                    width: 35%;
+                    margin: 5px;
+                    .movie_pic{
+                        max-height: 100%;
+                        height: 450px;
+                        overflow: hidden;
+                        align-items: center;
+                        justify-content: center;
+                        position: relative;
+                        object-fit: cover;
+                        text-align: center;
+                        img{
+                            height: 100%;
+                        }
+                    }
+                    .icons{
+                        position: relative;
+                        .subtitle{
+                            position: absolute;
+                            color: #fff;
+                            // background-color: rgb(133, 18, 18);
+                            bottom: 370px;
+                            left: 40px;
+                            .number{
+                                display: flex;
+                                h1{
+                                    margin: auto;
+                                }
+                                .date{
+                                    padding: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .movie_middle{
+                    width: 28%;
+                    margin: 5px;
+                    .middle01{
+                        max-height: 100%;
+                        height: 220px;
+                        overflow: hidden;
+                        align-items: center;
+                        justify-content: center;
+                        position: relative;
+                        object-fit: cover;
+                        text-align: center;
+                        .icons{
+                            position: relative;
+                            .subtitle{
+                                position: absolute;
+                                color: #fff;
+                                // background-color: rgb(133, 18, 18);
+                                bottom: 525px;
+                                left: 40px;
+                                .number{
+                                    display: flex;
+                                    h1{
+                                        margin: auto;
+                                    }
+                                    .date{
+                                        padding: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .middle02{
+                        max-height: 100%;
+                        height: 220px;
+                        overflow: hidden;
+                        align-items: center;
+                        justify-content: center;
+                        position: relative;
+                        object-fit: cover;
+                        text-align: center;
+                        margin-top: 8px;
+                        .icons{
+                            position: relative;
+                            .subtitle{
+                                position: absolute;
+                                color: #fff;
+                                // background-color: rgb(133, 18, 18);
+                                bottom: 525px;
+                                left: 40px;
+                                .number{
+                                    display: flex;
+                                    h1{
+                                        margin: auto;
+                                    }
+                                    .date{
+                                        padding: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .ad_block{
+            display: flex;
+            justify-content: space-between;
+            margin: 5% 0px;
+            .ad{
+                width: 30%;
+                background-color: rgb(233, 233, 233);
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+                .logos{
+                    background-color: #f6f6f6;
+                    width: 300px;
+                    max-width: 100%;
+                    margin: 5% auto;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .logo_name{
+                    font-size: 25px;
+                    text-align: center;
+                    padding-bottom: 20px;
+                }
+            }
+        }
+        
+    }
+    #footer{
+        height: 150px;
+        margin-top: 5%;
+        background-color: rgb(231, 231, 231);
+        .footer_infor{
+            display: flex;
+            .ft_text{
+                margin: 3%;
+            }
+            .group_link{
+                margin: 3%;
+            }
+            .footer_link{
+                display: flex;
+                margin: auto 0px;
+                a{
+                    text-decoration: none;
+                    color: #313131;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+
+    // ===========media screen===========
+
+@media screen and (min-width: 1440px) {
+    // 請用1366
+        // max-width: 1366px
+    #main{
+        // border: 1px solid red;
+        max-width: 1366px;
+    }
+
+}
+@media screen and (min-width: 1200px) and (max-width: 1439px){
+    // 請用1152
+        // max-width: 1152px
+    #main{
+        // border: 1px solid rgb(255, 94, 0);
+        max-width: 1152x;
+    }
+
+}
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    // 請用960
+        // max-width: 960px
+    #main{
+        // border: 1px solid rgb(239, 255, 11);
+        max-width: 960px;
+    }  
+}        
+@media screen and (min-width: 768px) and (max-width: 991px){
+    // 請用720
+        // max-width: 720px
+    #main{
+        // border: 1px solid rgb(7, 175, 15);
+        max-width: 720px;
+        .top{
+            height: 30px;
+        }
+        .travel_introduction{
+            .left_infor{
+                .place_intro{
+                    .picture{
+                        position: initial;
+                        margin: auto;
+                    }
+                }
+            }
+        }
+    }
+
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+    // 請用540
+        // max-width: 540px
+    #main{
+        // border: 1px solid rgb(7, 18, 175);
+        max-width: 540px;
+        .top{
+            height: 20px;
+        }
+        .travel_introduction{
+            justify-content: center;
+            .left_infor{
+                .place_intro{
+                    flex-direction: column;
+                    .picture{
+                        position: initial;
+                        margin: auto;
+                    }
+                    .introduction{
+                        width: 100%;
+
+                    }
+                }
+            }
+            .right_infor{
+                flex-direction: column;
+            }
+        }
+        .videos_block{
+            .videos{
+                .movie{
+                    margin: 0px;
+                }
+            }
+        }
+    }
+
+}
+@media screen and (max-width: 575px){
+    #main{
+        // border: 1px solid rgb(135, 14, 151);
+        .top{
+            height: 20px;
+        }
+        .travel_introduction{
+            justify-content: center;
+            .left_infor{
+                .place_intro{
+                    flex-direction: column;
+                    .picture{
+                        position: initial;
+                        margin: auto;
+                    }
+                    .introduction{
+                        width: 100%;
+
+                    }
+                }
+            }
+            .right_infor{
+                flex-direction: column;
+            }
+        }
+        .videos_block{
+            .videos{
+                .movie{
+                    margin: 0px;
+                }
+            }
+        }
+    }
+    #footer{
+        .footer_infor{
+            display: inline-block;
+        }
+    }
+}
+
+//RWD下拉式選單
+@media (max-width: 960px) {
+    .menu{
+        text-align: left;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.9s;
+        margin-top: 1px;
+        position: absolute;
+        z-index: 100;
+        top: 81px;
+        left: 0;
+        right: 0;
+        background: #e7e7e7;
+        margin: 0px;
+    }
+    .menu li{
+        float: none;
+        border-bottom: 1px dashed #69CA62;
+    }
+    .menu li a{
+        transition: all 0.3s;
+      }
+    .menu li a:hover{
+        background: #69CA62;
+        color: #fff;
+      }
+    .showmenu{
+        display: block;
+        float: right;
+        margin: 1.3em;
+      }
+      /*jQuery點擊後動態在 body 加上 class */
+      .menu-show .menu{
+          max-height: 600px;
+      }
+}
