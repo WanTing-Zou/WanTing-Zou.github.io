@@ -1,0 +1,120 @@
+//***************************************************//
+//*--Hide Text Set--*//
+%no_text {
+	font-size: 0;
+	text-indent: -99999px;
+}
+
+//*--Hide Long Word Set--*//
+%long_word {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+//*--Pop Up Shadow Set--*//
+%shadow_popup {
+	box-shadow: 0 6px 10px rgba(0, 0, 0, .7);
+}
+
+%shadow_popup-reverse  {
+	box-shadow: 0 -3px 10px rgba(0, 0, 0, .7);
+}
+
+//*--Horizontal List--*//
+%Hori_list {
+	display: block;
+	@extend .clearfix;
+
+	li {
+		display: block;
+		float: left;
+	}
+}
+
+//*--flexbox Set--*//
+
+// display
+%flex { display: flex;}
+%inline-flex { display: inline-flex;}
+
+// flex-direction 方向
+%flex-row { flex-direction: row;}
+%flex-row-reverse { flex-direction: row-reverse;}
+%flex-column { flex-direction: column;}
+%flex-column-reverse { flex-direction: column-reverse;}
+
+// justify-content 水平對齊
+%flex-start_justify { justify-content: flex-start;}
+%flex-end_justify { justify-content: flex-end;}
+%center_justify { justify-content: center;}
+%space-between { justify-content: space-between;}
+%space-around { justify-content: space-around;}
+
+// align-items 垂直對齊
+%flex-start_align { align-items: flex-start;}
+%flex-end_align { align-items: flex-end;}
+%center_align { align-items: center;}
+%stretch { align-items: stretch;}
+%baseline { align-items: baseline;}
+
+// align-self 覆寫已經套用 align-items 的屬性
+%align-self { align-self: baseline;}
+
+%center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+%start {
+	display: flex;
+	justify-content: flex-start;
+}
+
+%space-between {
+	display: flex;
+	align-content: space-between;
+	flex-wrap: wrap;
+}
+
+%svg-bg {
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+%after {
+	display: block;
+	content: '';
+}
+%before {
+	display: block;
+	content: '';
+}
+
+%header_list {
+	background: #0C111A;
+	box-shadow: 0 0 4px 0 rgba(0, 0, 0, .8);
+
+	li {
+		&:hover { 
+			background-image: linear-gradient(-180deg, #0B1720 0%, #19374F 100%);
+			box-shadow: none;
+		}
+	}
+}
+
+%fake_close {
+	// position: fixed;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	// height: 100%;
+	height: 100vh;
+	background: none;
+	// background: rgba(208,2,7,0.75);
+	overflow: auto;
+}
+
+

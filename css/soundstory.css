@@ -1,0 +1,308 @@
+@import "./hamburger.css";
+@import "./footer_RWD.css";
+@import "./asidelink.css";
+
+
+/* <!------------------BANNER BOX----------------> */
+div.bannerbox{
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+    position: relative;
+}
+        
+div.bannerbox > img{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.705);
+    object-fit: cover;
+}
+        
+/* <!------------------導覽列----------------> */
+    div.guide {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 10px 30px 20px;
+    }
+        
+    div.guide hr.hr{
+    margin-top: 10px;
+    width: 90%;
+    }
+    
+/* <!------------------標題開始-----------------> */
+    div.heading{
+        width: 100%;
+        margin: 3% 0;
+    }
+        
+    div.hd{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+        
+    div.hd > div.icon_R,
+    div.hd > div.tit_h3,
+    div.hd > div.icon_L{
+        width:9%;
+        text-align: center;
+    }
+        
+    div.hd > div.tit_en{
+        width:100%;
+        text-align: center;
+    }
+        
+        div.hd > div.icon_R:nth-child(1),
+        div.hd > div.icon_L:nth-child(3){
+        width: 40px;
+        }
+        
+        /* --------------標題文字+圖片----------------- */
+        div.heading div.hd div.icon_R > img,
+        div.heading div.hd div.icon_L > img{
+        width: 100%;
+        margin-top: 5px;
+        }
+        
+        div.heading div.hd div.tit_h3{
+        text-align: center;
+        line-height: 30px;
+        color: #8C720E;
+        font-size: 25px;
+        width: 300px;
+        }
+        
+        div.heading div.hd div.tit_en{
+        text-align: center;
+        color:#8C720E;
+        font-size: 16px;
+        }
+    
+        div.link{
+        max-width: 900px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        width: 100%;
+        /* border: 3px solid greenyellow; */
+        margin: 0 auto;
+        }
+            
+            
+        div.link div.about,
+        div.link div.logoproduct{
+        font-size: 15px;
+        margin: 2% 2%;
+        }
+
+/* <!------------------這是內文-----------------> */
+    main.main{
+    width: 100%;
+    }
+        
+    main.main div.contenter{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 8%;
+    /* border: 3px solid gold; */
+    }
+        
+    div.contenter_infor div.tittle > span{
+    text-align: center;
+    font-size: 20px;
+    color: #D4AA38;
+    line-height: 50px;
+    display: block;
+    font-weight: bold;
+    }
+        
+    div.contenter_infor div.tittle > hr{
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    color: #D4AA38;
+    /* border: 1px solid #D4AA38; */
+    }
+        
+    div.contenter_infor div.text_block{
+    /* border: 2px solid rgb(209, 89, 9); */
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 40px;
+    }
+        
+    main.main div.contenter div.contenter_infor div.text_block > span{
+    font-size: 18px;
+    line-height: 40px;
+    }
+        
+/* <!------------------鋼琴圖片-----------------> */
+    main.main div.contenter div.sound_img > img{
+    width: 100%;
+    margin-top: 40px;
+    }
+        
+/* <!------------------收聽列表-----------------> */
+    div.guide02{
+    font-size: 20px;
+    margin: 5% 0;
+    padding: 0px 10px;
+    }
+        
+    div.space{
+    width: 100%;
+    border-bottom: 1px solid gray;
+    margin-top: 20px;
+    }
+
+    div.contenter_infor2{
+    /* border: 2px solid green; */
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+    }
+
+    div.contenter_infor2 div{
+    /* border: 2px solid rgb(13, 0, 128); */
+    width: 60%;
+    margin: 0 auto;
+    }
+        
+    main.main div.contenter_infor2 > div.logo{
+    width: 30%;
+    height: 30%;
+    margin: auto;
+    }
+
+    div.contenter_infor2 div.logo > img{
+    width:100%
+    }
+        
+    div.contenter_infor2 div.onloading{
+    /* border: 3px solid palevioletred; */
+    justify-content: center;
+    }
+        
+    div.onloading > p.tittle{
+    font-size: 30px;
+    }
+    
+    audio{
+        outline: none;
+        width: 500px;
+    }
+
+    div.onloading > p.programintroduction{
+    line-height: 50px;
+    font-size: 20px;
+    color: rgb(18, 0, 66);
+    border-bottom: 1px solid rgb(61, 61, 61);
+    }
+
+    div.onloading > p.program_text{
+    font-size: 15px;
+    line-height: 40px;
+    }
+
+        
+    /* -------------收聽列表li處理  ------------- */
+    main.main div.contenter_infor3 ul{
+    /* border: 3px solid red; */
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 300px;
+    margin: 6% auto;
+    overflow: scroll;
+    }
+    
+    main.main div.contenter_infor3 ul > li{
+    list-style: none;
+    line-height: 40px;
+    border-bottom: 1px solid gray;
+    }
+    
+    main.main div.contenter_infor3{
+    margin-top: 30px;
+    }
+/* ----------------------GO TOP---------------------- */
+#gotop a{
+    text-decoration: none;
+}
+
+#gotop {
+    position:fixed;
+    z-index:90;
+    right:20px;
+    bottom:31px;
+    display:none;
+    width:40px;
+    height:40px;
+    color:#fff;
+    background: #8C720E;
+    line-height:40px;
+    border-radius:50%;
+    transition:all 0.5s;
+    text-align: center;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    }
+
+
+/* ----------------RWD-------------------- */
+
+@media screen and (max-width: 575px){
+    audio {
+        width: 100%;
+    }
+    div.heading div.hd div.icon_R > img,
+    div.heading div.hd div.icon_L > img {
+        display: none;
+    }
+
+    div.icon_R
+    div.icon_L{
+        display: none;
+    }
+
+    div.hd {
+        display: flex-start;
+    }
+
+    div.heading div.hd div.tit_h3 {
+        width: 100%;
+    }
+
+    div.contenter_infor div.tittle > span {
+        font-size: 14px;
+        line-height: 30px;
+    }
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+    main{
+      width: 540px;
+      /* border: 2px solid rgb(47, 134, 206); */
+    }
+    audio {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    audio {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    #aside{
+        display: none;
+    }
+}

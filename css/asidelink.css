@@ -1,0 +1,28 @@
+aside{
+display:block;
+margin:0;
+padding:0;
+}
+
+aside{
+position: fixed;
+right: 20px;
+bottom: 200px;
+height: auto;
+z-index: 4;
+}
+
+aside .aside-com-btn{
+display: block;
+position: absolute;
+right: 0px;
+bottom: 20px;
+height: auto;
+width: 36px;
+/* background-color: burlywood; */
+}
+
+aside .aside-com-btn > a> img{
+width: 100%;
+margin: 3px 0px;
+}

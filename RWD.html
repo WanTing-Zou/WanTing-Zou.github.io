@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+
+main{
+  width: 100;
+  border: 3px solid red;
+}
+
+@media screen and (max-width: 575px){
+  main{
+    width: 100%;
+    border: 1px solid purple;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+    main{
+      width: 540px;
+      border: 2px solid rgb(47, 134, 206);
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    main{
+      width: 720px;
+      border: 2px solid rgb(42, 158, 58);
+    }
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+  main{
+    width: 960px;
+    border: 2px solid rgb(245, 223, 29);
+    }
+
+}
+    
+ @media screen and (min-width: 1200px){
+   main{
+     width: 1140px;
+     border: 2px solid rgb(236, 121, 27);
+  }
+}
+
+    </style>
+<body>
+
+<!-- // -------------------RWD參考範圍---------------------->
+使用 SASS 劃分螢幕區隔
+提供使用 SASS 的 SCSS 語法，劃分好幾個螢幕區域，方便實作 RWD，建立一個 _grid.scss
+
+@media screen and (max-width: 575px){  /* xs */
+    width: 100%;
+  }
+  @media screen and (min-width: 576px) and (max-width: 767px){  /* sm */
+    width: 540px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 991px){  /* md */
+    width: 720px;
+  }
+  @media screen and (min-width: 992px) and (max-width: 1199px){  /* lg */
+    width: 960px;
+  }
+  @media screen and (min-width: 1200px){  /* xl */
+    width: 1140px;
+  }
+}
+    
+</body>
+</html>

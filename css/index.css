@@ -1,0 +1,692 @@
+@import "./hamburger.css";
+@import "./footer_RWD.css";
+
+a{
+    display: flex;
+    flex-direction: column;
+}
+
+/* <!------------------BANNER BOX----------------> */
+
+div.bannerbox{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    /* position: relative; */
+}
+
+div.bannerbox > img{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.705);
+    object-fit: cover;
+}
+
+/* <!------------------CONVERT BANNERS----------------> */
+ul.owl{
+    /* border: 1px solid red; */
+    padding:0;
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+}
+
+ul.owl > li{
+    list-style: none;
+    /* border: 2px solid blue; */
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    background-color: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+}
+
+ul.owl > li:nth-child(1),
+ul.owl > li:nth-child(5){
+    margin: 10px 0px 10px 0px;
+}
+
+/* ------------------CONVERT BANNERS 文字--------------- */
+div.concert_banners a {
+    text-decoration: none;
+    color: black;
+    flex-direction: column;
+}
+
+div.bannerimg_wrapper > img{
+    width: 100%;
+}
+
+div.concert_info{
+    margin:25px 0px 25px;
+    text-align: center;
+}
+
+div.concert_banners div.concert_info > hr{
+    width:70px;
+    padding-top: 10px;
+    border-left:none;
+    border-right:none;
+    border-bottom:none;
+    margin: 0 auto;
+}
+
+div.concert_info > p{
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+div.concert_info > p.info_en{
+    font-size: 13px;
+    line-height: 10px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+/* 滑鼠浮動特效 */
+div.concert_banners li:hover{
+    background-color:#E6DCCB;
+    opacity: 1;
+    transition: all 0.6s ease 0s;
+}
+
+/* <!------------------RIGHT LATEST NEWS----------------> */
+div.home_section a{
+    text-decoration: none;
+    color: black;
+}
+
+div.home_section{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    padding: 4%;
+}
+
+div.home_section div{
+    max-width: 1200px;
+    width: 100%;
+    padding:0;
+    justify-content: center;
+}
+
+div.outside_home_section{
+    display: flex;
+    width: 30%;
+    align-items: center;
+}
+
+div.outside_home_section div{
+    width: 100%;
+    align-items: center;
+}
+
+div.home_section div.latestnews{
+    padding: 10px;
+}
+
+div.home_section div.titl{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+div.home_section div.titl > div.icon_R,
+div.home_section div.titl > div.tit_h3,
+div.home_section div.titl > div.icon_L{
+    width:42%;
+}
+
+div.home_section div.titl > div.icon_R:nth-child(1),
+div.home_section div.titl > div.icon_L:nth-child(3){
+    width: 25px;
+}
+
+div.home_section div.titl > div.icon_R > img,
+div.home_section div.titl > div.icon_L > img{
+    width: 100%;
+    margin-top: 5px;
+}
+
+div.home_section div.titl > diV.tit_en{
+    width: 100%;
+}
+
+div.home_section div.tit_h3{
+    text-align: center;
+    line-height: 30px;
+    color: #8C720E;
+    font-size: 22px;
+}
+
+div.home_section div.tit_en{
+    text-align: center;
+    color:#8C720E;
+    font-size: 18px;
+}
+
+div.home_section div.content{
+    margin: 30px;
+    line-height: 30px;
+}
+
+div.home_section div.content > p{
+    font-size: 16px;
+}
+
+div.home_section div.content > p.date{
+    font-size: 12px;
+    color: gray;
+    margin-top: -5px;
+}
+
+div.home_section div.videos{
+    padding: 30px 10px 0px 10px;
+    top: auto;
+}
+
+div.home_section div.video_buttom{
+    display: flex;
+}
+
+/* !------------------LEFT VIDEOS/ALBUM----------------> */
+div.video_buttom div.more:nth-child(2){
+    width: 22%;
+    font-size: 13px;
+    text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    line-height: 40px;
+}
+
+div.video_buttom div.more{
+    margin :10px;
+}  
+/* 滑鼠浮動特效 */
+div.video_buttom div.more p:hover{ 
+    color:#8C720E;
+    opacity: 1;
+}
+
+/* <!---------------MUSIC OF Story tTITTLE---------------> */  
+div.heading{
+    width: 100%;
+    margin: 3% 0;
+}
+
+div.hd{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div.hd > div.icon_R,
+div.hd > div.tit_h3,
+div.hd > div.icon_L{
+    width:20%;
+    text-align: center;
+}
+
+div.hd > div.tit_en{
+    width:100%;
+    text-align: center;
+}
+
+div.hd > div.icon_R:nth-child(1),
+div.hd > div.icon_L:nth-child(3){
+    width: 25px;
+    margin: 0 -3%;
+}
+
+/* --------------標題文字+圖片----------------- */
+div.heading div.hd div.icon_R > img,
+div.heading div.hd div.icon_L > img{
+    width: 100%;
+    margin-top: 5px;
+}
+
+div.heading div.hd div.tit_h3{
+text-align: center;
+line-height: 30px;
+color: #8C720E;
+font-size: 25px;
+width: 300px;
+}
+
+div.heading div.hd div.tit_en{
+text-align: center;
+color:#8C720E;;
+font-size: 16px;
+}
+
+/* <!----------------滾動視差 MUSIC OF Story-------------> */
+div.music_str_backgroundimg{
+/* 背景圖片/居中/不重覆 */
+background: url("../img/music_str_backgroundimg.jpg")center center no-repeat;
+display: flex;
+background-size: cover;
+padding: 50px;
+}
+/* 設定區塊高度 */
+/* height: 100vh; */
+/* 背景自動縮放/固定 */
+/* background-attachment: fixed;
+background-size: cover;
+width:100%; */
+
+div.music_capture{
+width: 50%;
+height: 100%;
+padding: 20px;
+margin: 0 auto;
+background : rgba(71, 71, 71, 0.356);
+box-shadow : 0 1px 3em rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+padding: 15px;
+/* border: 3px solid rgb(17, 132, 226); */
+/* float : left; */
+/* position: relative; */
+/* text-indent : 0; */
+}
+
+div.storyplayer_right{  
+/* text-indent : 0; */
+width: 30%;
+margin: 0 auto;
+background : rgb(238, 238, 238);
+box-shadow : 0 1px 0.5em #333;
+z-index: 8;
+padding: 15px;
+/* position: absolute; */
+/* right: 100px;
+top: 30px; */
+/* 關鍵是在外層的div story_content設定relative後到此區設定absolute */
+}
+
+/* audio{
+    width: 400px;
+} */
+
+/* <!----------------story block-------------> */
+div.storyplayer_right div.story div.coverimg{
+width:60%;
+height: 60%;
+margin: 0 auto;
+}
+
+div.storyplayer_right div.story div.coverimg >img{
+width: 100%;
+}
+
+div.storyplayer_right div.story >p,
+div.storyplayer_right div.story >figure{
+text-align: center;
+line-height: 30px;
+}
+
+div.storyplayer_right div.story > p.en{
+font-size: 12px;
+}
+
+
+/* -------------收聽列表li處理  ------------- */
+div.contenter_infor3 ul{
+/* border: 3px solid red; */
+display: flex;
+flex-direction: column;
+width: 100%;
+height: 200px;
+margin: 0 auto;
+overflow: scroll;
+}
+
+div.contenter_infor3 ul > li{
+list-style: none;
+line-height: 30px;
+border-bottom: 1px solid gray;
+}
+
+div.contenter_infor3{
+/* border: 2px solid palegreen; */
+font-size: 1px;
+}
+
+div.story_content div.writeblock{
+width:100%;
+height : 10vh;
+background-color: rgb(214, 213, 206);
+}
+
+div.music_capture h3{
+text-align: center;
+font-size: 30px;
+}
+
+div.music_capture p{
+line-height: 40px;
+font-size: 16px;
+}
+
+div.music_capture a{
+text-decoration: none;
+color: white;
+text-align: center;
+}
+
+audio{
+    width: 100%;
+}
+
+/* <!------------------ABOUT US----------------> */
+div.abs_outline{
+width: 100%;
+/* border: 3px solid rgb(8, 61, 16); */
+}
+
+div.le_abs{
+display: flex;
+max-width: 1200px;
+width: 100%;
+height: auto;
+/* border: 3px solid darkblue; */
+margin: 0 auto;
+margin-top: 10%;
+}
+
+div.ads_img{
+position: relative;
+display: inline-block;
+}
+    
+div.le_img{
+max-width: 500px;
+height: 100%;
+/* border: 3px solid red; */
+}
+    
+div.ri_abs{
+color: rgb(0, 0, 0);
+display: inline-block;
+width: 100%;
+/* border: 3px solid red; */
+display: flex;
+flex-direction: column;
+/* margin: 30px; */
+}
+
+/* <!------------ABOUT US右上文字處理------------> */
+div.abs_outline{
+margin-bottom: 6%;
+}
+
+div.abs_outline div.usblock{
+display: flex;
+width: 100%;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+div.abs_outline div.usblock div.stit_word,
+div.abs_outline div.usblock div.abs_more{
+width:100%;
+}
+
+div.abs_outline div.usblock div{
+width: 25%;
+}
+
+div.ri_abs div.usblock > div.icon_R:nth-child(1),
+div.ri_abs div.usblock > div.icon_L:nth-child(3){
+width: 25px;
+}
+
+div.ri_abs div.usblock > div.icon_R > img,
+div.ri_abs div.usblock > div.icon_L > img{
+width: 100%;
+margin-top: 5px;
+}
+
+div.ri_abs div.usblock > div.icon_R,
+div.ri_abs div.usblock > div.icon_L{
+margin: auto 0;
+}
+
+div.ri_abs div.tit_about{
+text-align: center;
+color:#8C720E;
+}
+
+div.ri_abs div.tit_about > h3{
+color: #8C720E;
+font-size: 30px;
+}
+
+div.ri_abs div.tit_about > p{
+text-align: center;
+color:#8C720E;
+font-size: 18px;
+margin-top: 5px;
+}
+
+div.ri_abs div.stit_word{
+margin: 5% 10% ;
+text-align: center;
+padding: 10px 0px;
+/* background-color: #000000; */
+color:rgb(0, 0, 0);
+border-radius: 30px;
+font-size: 18px;
+}
+
+div.ri_abs div.abs_words{
+margin: 1% 10%;
+line-height: 50px;
+}
+
+div.ri_abs div.abs_more{
+margin: 1% 42% 1% 42%;
+line-height: 50px;
+border-top: 1px solid black;
+border-bottom: 1px solid black;
+}
+
+div.ri_abs div.abs_more > a> p{
+text-align: center;
+font-size: 13px;
+text-decoration: none;
+color: black;
+}
+
+div.ri_abs div.le_img{
+width: 500px;
+height: 731.4px;
+overflow: hidden;
+}
+
+div.abs_img div.le_img > img{
+    width: 100%;
+    height: auto;
+    /* position: absolute; */
+    top: 50%;
+}
+div.ri_abs div.group_img{
+    margin: 0 auto;
+}
+
+
+
+/* <!------------------OUR TEAM----------------> */
+div.ourteam_outline{
+width: 100%;
+/* border: 2px solid palegreen; */
+}
+
+div.team_contact{
+display: flex;
+flex-wrap: wrap;
+max-width: 1200px;
+width: 100%;
+margin: 0 auto;
+}
+
+div.team_contact div{
+width:18%;
+/* height:300px; */
+/* border: 1px solid blue; */
+margin: 1%;
+}
+
+div.team_contact div >p{
+line-height: 30px;
+text-align: center;
+padding-top: 10px;
+}
+
+div.team_contact > div.command,
+div.team_contact > div.gucommand,
+div.team_contact > div.director,
+div.team_contact > div.vidirector,
+div.team_contact > div.master{
+display: flex;
+flex-direction: column;
+align-items: center;
+/* border: green 2px solid; */
+}
+
+div.team_contact .circle{
+height: 180px;
+width: 180px;
+border-radius: 100%;
+}
+
+div.team_contact .content{
+width:100%;            
+}
+
+div.team_contact a.button{
+display: block;
+width: 100%;
+margin: 30px 0px;
+/* border: 1px solid red; */
+padding: 10px 0px;
+text-align: center;
+}
+
+div.team_contact div.circle > img{
+    overflow: hidden;
+    width: 180px;
+    height:180px;
+}
+
+/* ----------------------GO TOP---------------------- */
+#gotop a{
+    text-decoration: none;
+}
+
+#gotop {
+    position:fixed;
+    z-index:90;
+    right:20px;
+    bottom:31px;
+    display:none;
+    width:40px;
+    height:40px;
+    color:#fff;
+    background: #8C720E;
+    line-height:40px;
+    border-radius:50%;
+    transition:all 0.5s;
+    text-align: center;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    }
+    
+
+/* <!------------------ROUND IMG----------------> */
+  @keyframes banner-slider {
+        
+    0% { 
+    background-position: 0 0;
+    }
+      
+    100% { 
+    background-position: 3980px 0;
+    }
+  }
+  
+  
+div.goround_img{
+background-image: url('../img/banner_round.jpg');
+background-position:center;
+background-repeat:repeat-x;
+width:100%;
+margin: 100px 0px 0px 0px;
+height:260px;
+overflow: hidden;
+animation: banner-slider 120s infinite linear;
+transform:scale(1,1);
+transition: all 1s ease-out; 
+} 
+  
+div.banner:hover{
+animation-play-state: paused;
+overflow:hidden;
+height: 260px;
+/* transform:scale(1.2,1.2); */
+}
+
+/* <!------------BUTTON RECRUIT/CONTACT----------------> */
+div.btm{
+align-items:stretch;
+/* position: relative; */
+z-index: 5;
+}
+
+div.bt_block{
+display: flex;
+width: 100%;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+div.btm .item{
+/* border: 5px solid gold; */
+width: 50%;
+height: 100px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+transition: all 1s ease 0s;
+}
+
+div.bt_block .rec{
+background-color: rgb(182, 167, 148);
+}
+
+div.bt_block .contact{
+background-color: rgb(214, 213, 206);
+
+}
+
+div.bt_block p.btm_txt{
+line-height: 32px;
+font-size: 24px;
+text-align: center;
+color: white;
+text-shadow: rgb(87, 87, 87) 0.1em 0.1em 0.2em;
+}
+
+/* 滑鼠浮動特效 */
+div.btm a.rec:hover,
+div.btm a.contact:hover{ 
+background-color:#8C720E;
+opacity: 1;
+}
+
+
+div.heading div.hd.line.music div.tit_h3{
+    width: 400px;
+}

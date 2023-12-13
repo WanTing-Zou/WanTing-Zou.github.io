@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>btmbox</title>
+</head>
+
+<style>
+*{
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+font-family: 'Roboto', Helvetica , "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei",Arial,sans-serif;
+/* border: 1px solid green; */
+}
+ /* //這邊不一定要加 */
+a{
+    text-decoration: none;
+    text-align: center;
+}
+/* ////////////////////// */
+
+div.btm{
+align-items:stretch;
+position: relative;
+z-index: 5;
+}
+
+div.block{
+display: flex;
+width: 100%;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+div.btm .item{
+/* border: 5px solid gold; */
+width: 50%;
+height: 100px;
+color: rgb(255, 255, 255);
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+transition: all 1s ease 0s;
+}
+
+div.btm .rec{
+background-color: #CFD0BE;
+}
+
+div.btm .contact{
+background-color: #d6d5ce;
+}
+
+div.block p.btm_txt{
+line-height: 30px;
+font-size: 24px;
+}
+
+/* 滑鼠浮動特效 */
+div.btm a.rec:hover{ 
+background-color:#8C720E;
+opacity: 1;
+}
+
+div.btm a.contact:hover{ 
+background-color:#E6DCCB;
+opacity: 1;
+}
+
+</style>
+
+
+<body>
+    <div class="btm block">
+        <a class="btm item rec" href="#">
+            <p class="btm_txt">
+                <span class="rec_ch">團員招募</span>
+                <br>
+                <span class="rec_en">RECRUIT</span>
+            </p>
+        </a>
+
+        <a class="btm item contact" href="#">
+            <p class="btm_txt">
+                <span class="cont_ch">聯絡我們</span>
+                <br>
+                <span class="cont_en">CONTACT US</span>
+            </p>
+        </a>
+
+    </div>
+
+    
+</body>
+</html>

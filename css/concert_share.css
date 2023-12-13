@@ -1,0 +1,311 @@
+@import "./hamburger.css";
+@import "./footer_RWD.css";
+@import "./asidelink.css";
+
+/* <!------------------BANNER BOX----------------> */
+div.bannerbox{
+width: 100%;
+height: 40vh;
+overflow: hidden;
+position: relative;
+}
+
+div.bannerbox > img{
+width: 100%;
+height: 100%;
+background-color: rgba(255, 255, 255, 0.705);
+object-fit: cover;
+}
+
+/* <!------------------導覽列----------------> */
+div.guide {
+max-width: 1200px;
+width: 100%;
+margin: 0 auto;
+padding: 30px 10px 30px 20px;
+}
+
+div.guide hr.hr{
+margin-top: 10px;
+width: 90%;
+}
+/* <!------------------標題開始-----------------> */
+div.heading{
+width: 100%;
+margin: 3% 0;
+}
+
+div.hd{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+div.hd > div.icon_R,
+div.hd > div.tit_h3,
+div.hd > div.icon_L{
+width:20%;
+text-align: center;
+}
+
+div.hd > div.tit_en{
+width:100%;
+text-align: center;
+}
+
+div.hd > div.icon_R:nth-child(1),
+div.hd > div.icon_L:nth-child(3){
+width: 8%;
+}
+
+/* --------------標題文字+圖片----------------- */
+div.heading div.hd div.icon_R > img,
+div.heading div.hd div.icon_L > img{
+width: 30%;
+margin-top: 5px;
+}
+
+div.heading div.hd div.tit_h3{
+text-align: center;
+line-height: 30px;
+color: #8C720E;
+font-size: 25px;
+width: 20%;
+}
+
+div.heading div.hd div.tit_en{
+text-align: center;
+color:#8C720E;;
+font-size: 16px;
+}
+
+/* <!-----------------品音樂的內文-----------------> */
+main.main{
+max-width: 1200px;
+width: 100%;
+margin: 0 auto;
+}
+
+main.main div.contenter {
+max-width: 1000px;
+width: 100%;
+margin: 0 auto;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+main.main div.contenter div{
+width: 29%;
+/* height: 540px; */
+text-align: center; 
+margin: 20px;
+}
+
+div.text_block{
+/* border: 1px solid rgba(128, 128, 128, 0.301); */
+box-shadow: 0px 8px 16px 0px rgba(129, 129, 129, 0.1);
+padding: 30px;
+width: 50%;
+margin: 0 auto;
+margin-top: 40px;
+line-height: 42px;
+font-size: 14px;
+}
+    
+main.main div.contenter div.box1,
+main.main div.contenter div.box2,
+main.main div.contenter div.box3,
+main.main div.contenter div.box4,
+main.main div.contenter div.box5,
+main.main div.contenter div.box6{
+display: flex;
+flex-direction: column;
+padding: 30px;
+background-color: #f6f6f6;
+/* justify-content: center; */
+}
+
+div.contenter div.box1 > img,
+div.contenter div.box2 > img,
+div.contenter div.box3 > img,
+div.contenter div.box4 > img,
+div.contenter div.box5 > img,
+div.contenter div.box6 > img{
+width: 100%;
+}
+
+
+div.contenter div.box1 span.tittle,
+div.contenter div.box2 span.tittle,
+div.contenter div.box3 span.tittle,
+div.contenter div.box4 span.tittle,
+div.contenter div.box5 span.tittle,
+div.contenter div.box6 span.tittle{
+font-size: 22px;
+color: rgb(34, 34, 34);
+padding-top: 20px;
+}
+
+div.contenter div.box1 span.time,
+div.contenter div.box2 span.time,
+div.contenter div.box3 span.time,
+div.contenter div.box4 span.time,
+div.contenter div.box5 span.time,
+div.contenter div.box6 span.time{
+font-size: 15px;
+text-align: left;
+color: rgb(88, 88, 88);
+padding-top: 10px;
+}
+
+div.contenter div.box1 p.contact,
+div.contenter div.box2 p.contact,
+div.contenter div.box3 p.contact,
+div.contenter div.box4 p.contact,
+div.contenter div.box5 p.contact,
+div.contenter div.box6 p.contact{
+font-size: 12px;
+text-align: left;
+color: rgb(0, 0, 0);
+line-height: 30px;
+}
+
+
+div.contenter p.bottom{
+border-top: 1px solid black;
+border-bottom: 1px solid black;
+width: 50%;
+padding: 10px 0px;
+margin: 20px auto;
+}
+
+
+div.contenter div.box1 > a,
+div.contenter div.box2 > a,
+div.contenter div.box3 > a,
+div.contenter div.box4 > a,
+div.contenter div.box5 > a,
+div.contenter div.box6 > a{
+color: black;
+}
+
+/* ----------------------GO TOP---------------------- */
+#gotop a{
+    text-decoration: none;
+}
+
+#gotop {
+    position:fixed;
+    z-index:90;
+    right:20px;
+    bottom:31px;
+    display:none;
+    width:40px;
+    height:40px;
+    color:#fff;
+    background: #8C720E;
+    line-height:40px;
+    border-radius:50%;
+    transition:all 0.5s;
+    text-align: center;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    }
+
+/* ----------------往下一頁的btn-------------- */
+div.pagination{
+width: 100%;
+margin: 30px 0px 60px 0px;
+}
+
+div.pagination div.block{
+/* display: inline-block; */
+max-width: 1200px;
+width: 100%;
+margin: 0 auto;
+}
+
+div.pagination div.block > ul.pagination{
+list-style: none;
+margin: 0;
+padding: 0;
+font-size: 0;
+text-align: center;
+}
+
+div.pagination div.block > ul.pagination > li{
+display: inline-block;
+}
+
+div.pagination div.block > ul.pagination > li > a{
+display: inline-block;
+text-decoration: none;
+text-align: center;
+padding: 10px 20px;
+font-size: 1rem;
+color: rgb(88, 88, 88);
+}
+
+div.pagination div.block > ul.pagination > li:last-child > a{
+border-right: 1px solid #dee2e6;
+border-radius: 0 5px 5px 0;
+}
+
+div.pagination div.block > ul.pagination > li:first-child > a{
+display: inline-block;
+border-radius: 5px 0 0 5px;
+}
+
+div.pagination div.block > ul.pagination > li > a:hover{
+background-color: #E6DCCB;
+color: #ffffff;
+}
+
+/* ---------------RWD------------------- */
+@media screen and (min-width:420px) and (max-width:959px){
+    div.text_block {
+        width: 80%;
+    }
+
+    main.main div.contenter div.box1, 
+    main.main div.contenter div.box2, 
+    main.main div.contenter div.box3, 
+    main.main div.contenter div.box4, 
+    main.main div.contenter div.box5, 
+    main.main div.contenter div.box6{
+        width: 40%;
+        margin: 20px auto;
+    }
+}
+
+@media screen and (max-width:575px){
+    main.main div.contenter div.box1, 
+    main.main div.contenter div.box2, 
+    main.main div.contenter div.box3, 
+    main.main div.contenter div.box4, 
+    main.main div.contenter div.box5, 
+    main.main div.contenter div.box6{
+        width: 100%;
+    }
+
+    div.text_block {
+        box-shadow: 0px 8px 16px 0px rgba(129, 129, 129, 0.1);
+        padding: 30px;
+        width: 90%;
+    }
+
+    div.hd > div.icon_R:nth-child(1),
+    div.hd > div.icon_L:nth-child(3) {
+    display: none;
+    }
+    div.heading div.hd div.tit_h3 {
+        font-size: 14px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    #aside{
+        display: none;
+    }
+}

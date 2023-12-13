@@ -1,0 +1,79 @@
+109/6/22 CODE紀錄
+
+HTML
+
+	<div class="r1">
+		<img src="./img/r1.jpg">
+	</div>
+
+	<div class="r2">
+		<img src="./img/r2.jpg" alt="">
+	</div>
+
+	<div class="r3">
+		<img src="./img/r3.jpg" alt="">
+	</div>
+
+	<div class="r4">
+		<img src="./img/r4.jpg" alt="">
+	</div>
+
+	<div class="r5">
+		<img src="./img/r5.jpg" alt="">
+	</div>
+
+	<div class="r6">
+		<img src="./img/r6.jpg" alt="">
+	</div>
+
+	<div class="r7">
+		<img src="./img/r7.jpg" alt="">
+	</div>
+
+	<div class="r8">
+		<img src="./img/r8.jpg" alt="">
+	</div>
+
+	<div class="r9">
+		<img src="./img/r9.jpg" alt="">
+	</div>
+
+	<div class="r10">
+		<img src="./img/r10.jpg" alt="">
+	</div>
+</div> -->
+
+
+CSS:
+
+/* <!------------------ROUND IMG----------------> */
+/* div.round_img{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-wrap: nowrap;
+    animation: marqee 80s linear infinite;
+    flex-shrink: 0;
+}
+
+div.round_img div{
+    border: 1px solid blue;
+    width: 10%;
+}
+
+div.round_img div > img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+
+
+@keyframes marqee{
+0% {
+	transform: translateX(0%);
+}
+100% {
+	transform: translateX(-100%);
+}
+} */

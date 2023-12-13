@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waterfall</title>
+</head>
+
+<style>
+
+    *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', Helvetica , "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei",Arial,sans-serif;
+    }
+
+/* 
+    -------------------nav---------------------- */
+body{
+background: #ffffff;
+}
+
+div.waterfall_line{
+width: 100%;
+}
+
+a{
+text-decoration: none;
+color:rgb(255, 255, 255);
+display: flex;
+}
+
+header{
+width: 100%;
+background-color: rgb(0, 0, 0);
+}
+
+nav{
+width: 100%;
+display: flex;
+justify-content:space-evenly;
+/* border: 1px solid gray; */
+margin: 0 auto;
+background-color: black;
+}
+
+.header-links-wrap {
+display: flex;
+text-align: center;
+line-height: 30px;
+font-size: 14px;
+}
+
+.header-links-wrap a{
+padding: 15px;
+margin: 0 15px;
+}
+
+.header-links-wrap a:hover, .dropdown:hover{
+background: #8C720E;
+color: rgb(255, 255, 255);
+cursor: pointer;
+}
+
+.container{
+margin: 30px;
+display: flex;
+justify-content: center;
+}
+
+.dropdown{
+position: relative;
+display: inline-block;
+padding: 15px;
+margin: 0 15px;
+}
+
+.dropdown-content{
+display: none;
+position: absolute;
+color: #000;
+background-color: #ffffff;
+min-width: 109px;
+text-align: center;
+margin-top: 15px;
+margin-left: -15px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown:hover .dropdown-content{
+display: block;
+}
+
+.dropdown-content a{
+padding: 10px;
+margin: 0;
+}
+
+nav a.img{
+width: 20%;
+overflow: hidden;
+display: block;
+margin: auto 0;
+}
+
+nav a.img > img{
+width: 70%;
+/* overflow: hidden; */
+display: block;
+margin: 0 100px 0px 0px;
+}
+
+div.dropdown span.wh{
+color: white;
+text-align: center;
+line-height: 30px;
+}
+
+div.social-media{
+color: black;
+}
+
+
+
+    #waterfall{
+    /* border: 3px solid palevioletred; */
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 100%;
+    }
+
+    .itemContainer{
+    margin: 3%;
+    flex-direction: column;
+    width: 42%;
+    }
+
+    .itemContainer:nth-child(1){
+    /* margin-right: 80px; */
+    flex-direction: column;
+    width: 30%;
+    /* border: 4px solid green; */
+    }
+
+    .item{
+    margin-bottom: 10px;
+    background: #f6f6f6;
+    }
+
+    .itemImg{
+    width: 100%;
+    }
+
+    .dpInfo{
+    padding: 5px 10px;
+    }
+
+    .avatar {
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    }
+
+    .username {
+    margin-left: 5px;
+    }
+
+
+    ul{
+    list-style: none;
+    line-height: 50px;
+    font-size: 14px;
+    }
+
+    li.num{
+    font-size: 22px;
+    }
+
+    hr{
+    width: 60%;
+    }
+
+    div.itemContainer  div.item  p.text{
+    line-height: 36px;
+    margin-top: 10px;
+    font-size: 8px;
+    /* font-size: 30px; */
+    }
+
+    footer.footer{
+    /* border: 3px solid black; */
+    width: 100%;
+    background-color: #F6F6F6;
+    padding-top: 20px;
+    }
+
+    div.footer_outline{
+    display: flex;
+    /* border: 2px solid blue; */
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    }
+
+    div.ft_block{
+    /* border: 3px solid palevioletred; */
+    width: 40%;
+    margin: 10px;
+    }
+
+    div.ft_block:nth-child(1){
+    width: 25%;
+    }
+
+    div.logo{
+    margin: auto 0;
+    }
+
+    div.ft_item .logo > img{
+    width: 100%;
+    }
+
+    div.infor td.ttl{
+    line-height: 40px;
+    padding: 0px 40px 0px 30px;
+    text-align: justify;
+    }
+
+    div.input_button{
+    /* border: 2px solid gold; */
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 25px 0px;
+    }
+
+    div.input_button .email{
+    width: 30%;
+    }
+
+    div.input_button div.ad{
+    width: 75%;
+    }
+
+    div.input_button > input{
+    padding: 10px;
+    font-size: 20px;
+    }
+
+    div.input_button div.click{
+    background-color: black;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 40px;
+    }
+
+    div.input_button div.click > a{
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 40px;
+    }
+    
+    div.click >p.sub_click{ 
+    color: white;
+    }
+
+    div.copyright{
+    width: 100%;
+    background: #000000;
+    color: white;
+    text-align: center;
+    height: 50px;
+    padding-top: 12px;
+    border-top: 1px solid white;
+    font-size: 15px;
+    }
+
+    div.copyright > pre{
+    line-height: 22px;
+    }
+
+/* ---------------這段是為了要控制被其他屬性覆寫的指令------------------ */
+    div.itemContainer  div.item div.wh  ul.photolist > li > a{
+    text-decoration: none;
+    color: black;
+    }
+
+    div.dpInfo span.username{
+        font-size: 12px;
+    }
+
+</style>
+
+<body>
+    <nav>
+        <a  class="img" href="./index.html">
+          <img src="./img/nav_logo_white.png" alt="logo">
+        </a>
+        
+        <div class="header-links-wrap">
+            <div class="dropdown">
+                <span class="wh">關於我們<br>
+                    <p class="en">ABOUT</p>
+                </span>
+                <div class="dropdown-content">
+                    <a href="#">
+                      <div class="social-media">樂團的成立</div>
+                    </a>
+                    <hr style="margin: 0">
+                    <a href="#">
+                      <div class="social-media">歷年演出</div>
+                    </a>
+                    <hr style="margin: 0">
+                    <a href="#">
+                      <div class="social-media">團員名單</div>
+                    </a>
+                    <hr style="margin: 0">
+                    <a href="#">
+                      <div class="social-media">行政團隊</div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="dropdown">
+                <span class="wh">音樂會<br>
+                    <p class="en">CONCERT</p>
+                </span>
+                <div class="dropdown-content">
+                    <a href="#">
+                        <div class="social-media">最新節目單</div>
+                    </a>
+                    <hr style="margin: 0">
+    
+                    <a href="#">
+                        <div class="social-media">藝文活動</div>
+                    </a>
+                </div>
+            </div>
+            <a href="./contact.html">
+                <span>最新消息<span><br>
+                <p>LATEST NEWS</p>  
+            </a>
+        
+          <div class="dropdown">
+            <span class="wh">演出成果<br>
+                <p class="en">RESULT</p>
+            </span>
+            <div class="dropdown-content">
+              <a href="#">
+                <div class="social-media">PHOTOS</div>
+              </a>
+              <hr style="margin: 0">
+              <a href="#">
+                <div class="social-media">VIDEOS</div>
+              </a>
+            </div>
+        </div>
+        <a href="./contact.html">
+            <span>團員招募<span><br>
+            <p class="en">RECRUIT</p>  
+        </a>
+    </nav>
+    
+<!------------------------------------BANNER BOX------------------------------->
+    <div class="bannerbox">
+      <img src="./img/content.jpg" alt="">
+    </div>
+<!------------------------------------waterfall------------------------------->
+    <div class="waterfall_line">
+        <div id="waterfall">
+            <div class="itemContainer">
+                <div class="item">
+                    <div class="dpInfo">
+                        <div class="username wh">
+                            <ul class="photolist">
+                                <li class="num">2020年</li>
+                                <li>大新竹小管樂【室內樂篇】</li>
+                                <li>大新竹管樂團</li>
+                            </ul>
+                            <hr>
+                            
+                            <ul class="photolist">
+                                <li class="num">2019年</li>
+                                <a href="#"><li>一起長大的「動漫史」</a></li>
+                                <li>大新竹管樂團大眾系列 II</li>
+                            </ul>
+
+                            <ul class="photolist">
+                                <li>萬事屋音樂會</li>
+                                <li>大新竹管樂團巡迴系列 I</li>
+                            </ul>
+                            <hr>
+                            <ul class="photolist">
+                                <li class="num">2018年</li>
+                                <li>輕旅行海洋</li>
+                                <li>大新竹管樂團大眾系列一</li>
+                            </ul>
+        
+                            <ul class="photolist">
+                                <li>新～新～新世界</li>
+                                <li>大新竹管樂團經典系列 II</li>
+                            </ul>
+                            <hr>
+                            
+                            <ul>
+                                <li class="num">2017年</li>
+                                <li>[自然系列音樂會二]自然人</li>
+                                <li>大新竹管樂團年度大型音樂會</li>
+                            </ul>
+        
+                            <ul>
+                                <li>天馬傳說</li>
+                                <li>大新竹管樂團親子系列音樂會</li>
+                            </ul>
+                            <ul>
+                                <li>管樂chamber便利貼</li>
+                                <li>大新竹管樂團經典系列 I</li>
+                            </ul>
+                            <hr>
+
+                            <ul>
+                                <li class="num">2016年</li>
+                                <li>咦？我們的愛不一樣!?</li>
+                                <li>105年度親子音樂會</li>
+                            </ul>
+                            <hr>
+
+                            <ul>
+                                <li class="num">2015年</li>
+                                <li>夢想傳奇</li>
+                                <li>大新竹管樂團創團音樂會</li>
+                            </ul>
+                            <ul>
+                                <li>《回歸•大地》音樂會</li>
+                                <li>2015下半年度音樂會</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="itemContainer">
+                <div class="item">
+                    <img class="itemImg" src="./img/musiuclass_01.jpg" alt=""/>
+                    <div class="dpInfo">
+                        <img class="avatar" src="./img/r4.jpg" alt=""/>
+                        <span class="username">PHOYO BY KING.L</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="itemImg" src="./img/musicclass03.jpg" alt=""/>
+                    <div class="dpInfo">
+                        <img class="avatar" src="./img/musiuclass_01.jpg" alt=""/>
+                        <span class="username">PHOTO BY KING.L</saan>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="itemImg" src="./img/music_str_backgroundimg.jpg" alt=""/>
+                    <div class="dpInfo">
+                        <img class="avatar" src="./img/r9.jpg" alt=""/>
+                        <span class="username">PHOTO BY KING.L</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="itemImg" src="./img/52417164_10156195020640794_4255131710552801280_o.jpg" alt=""/>
+                    <div class="dpInfo">
+                        <img class="avatar" src="./img/command.png" alt=""/>
+                        <span class="username">PHOTO BY KING.L</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="itemImg" src="./img/67639918_2304748856312656_8454967731509264384_n.jpg" alt=""/>
+                    <div class="dpInfo">
+                        <img class="avatar" src="./img/command.png" alt=""/>
+                        <span class="username">PHOTO BY KING.L</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="itemImg" src="./img/昱寧海報.jpg" alt=""/>
+                    <div class="dpInfo">
+                        <img class="avatar" src="../images/gift.png" alt=""/>
+                        <span class="username">PHOTO BY KING.L</span>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="itemContainer">
+                <div class="item">
+                    <img class="itemImg" src="../images/5.jpeg" alt=""/>
+                    <div class="dpInfo">
+                        <img class="avatar" src="../images/gift.png" alt=""/>
+                        <span class="username">這是文字區域</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="itemImg" src="../images/7.jpeg" alt=""/>
+                    <div class="dpInfo">
+                        <img class="avatar" src="../images/gift.png" alt=""/>
+                        <span class="username">這是文字區域</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="itemImg" src="./img/musicclass02.jpg" alt=""/>
+                    <div class="dpInfo">
+                        <img class="avatar" src="../images/gift.png" alt=""/>
+                        <span class="username">這是文字區域</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="itemImg" src="./img/concert05.jpg" alt=""/>
+                    <div class="dpInfo">
+                        <img class="avatar" src="../images/gift.png" alt=""/>
+                        <span class="username">這是文字區域</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="itemImg" src="./img/r9.jpg" alt=""/>
+                    <div class="dpInfo">
+                        <img class="avatar" src="./img/musiuclass_01.jpg" alt=""/>
+                        <span class="username">這是文字區域</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="itemImg" src="./img/musicclass03.jpg" alt=""/>
+                    <div class="dpInfo">
+                        <img class="avatar" src="./img/musiuclass_01.jpg" alt=""/>
+                        <span class="username">這是文字區域</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+<!--------------------------FOOTER---------------------->
+
+    <footer class="footer">
+        <div class="footer_outline ft_item">
+            <div class="ft_block logo">
+                <img src="./img/footer-logo.png" alt="">
+            </div>
+
+            <div class="ft_block infor">
+                <table>
+                    <tr>
+                        <td class="ttl">團練地點：</td>
+                        <td class="p">320桃園市中壢區中大路300號
+                            <br>工程二館 資策會大樓</td>
+                    </tr>
+
+                    <tr>
+                        <td class="ttl">連絡電話：</td>
+                        <td class="p">(03)425-7387</td>
+                    </tr>
+
+                    <tr>
+                        <td class="ttl">服務信箱：</td>
+                        <td class="p">tibame@gmail.com</td>
+                    </tr>
+
+                    <tr>
+                        <td class="ttl">瀏覽人數：</td>
+                        <td class="p">10,477,256/人</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="ft_block co">
+                <h2>輸入信箱訂閱電子報</h2>
+                <div class="input_button">
+                    <div class="email ad">
+                        <input type="text" style="padding: 10px 130px 10px 10px;" name="e-mail" placeholder="Email address" >
+                    </div>
+
+                    <div class="email click">
+                        <p class="sub_click">SUBSCRIBE</p>
+                    </div>
+                </div>
+                <div class="remarks">
+                    <pre>隱私宣告  ｜ 資訊安全  ｜  版權宣告  ｜  聯絡我們 ｜  常見問答</pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <pre class="copri">&copy; 2020 HSINCHU WINDS CO.LTD.ALL RIGHTS RESERVED</pre>
+        </div>
+
+    </footer>
+
+    
+</body>
+</html>

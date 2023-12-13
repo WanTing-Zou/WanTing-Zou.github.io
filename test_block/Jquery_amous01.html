@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amous 教jQuery</title>
+
+    <style>
+        div.box-a{
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+            background-color: yellow;
+        }
+        div.box-b{
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+            background-color: rgb(112, 235, 75);
+        }
+
+        body{
+            width: 1200px;
+            margin: 0 auto;
+        }
+        div.product-tittle{
+            background-color: black;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        div.content{
+            font-size: 15px;
+            line-height: 30px;
+            display: none;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="box-a">a</div>
+    <div class="box-b">b</div>
+
+    <div class="product-tittle">產品介紹</div>
+    <div class="content">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus fuga sapiente officiis quasi totam id aspernatur quo, 
+        expedita vitae illo hic dolores modi perferendis voluptas, incidunt eligendi soluta iusto nisi?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus fuga sapiente officiis quasi totam id aspernatur quo, 
+        expedita vitae illo hic dolores modi perferendis voluptas, incidunt eligendi soluta iusto nisi?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus fuga sapiente officiis quasi totam id aspernatur quo, 
+        expedita vitae illo hic dolores modi perferendis voluptas, incidunt eligendi soluta iusto nisi?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus fuga sapiente officiis quasi totam id aspernatur quo, 
+        expedita vitae illo hic dolores modi perferendis voluptas, incidunt eligendi soluta iusto nisi?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus fuga sapiente officiis quasi totam id aspernatur quo, 
+        expedita vitae illo hic dolores modi perferendis voluptas, incidunt eligendi soluta iusto nisi?
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+		$(document).ready(function(){
+            $(".box-a").click(function(){
+                $(".box-b").toggle();
+            })
+
+
+            $(".product-tittle").click(function(){
+                $(".content").toggle();
+		})
+    })
+    </script>
+
+</body>
+
+</html>

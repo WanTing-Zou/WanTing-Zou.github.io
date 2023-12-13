@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', Helvetica , "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei",Arial,sans-serif;
+}
+
+.marqee{
+	height: 3em;
+	margin: 0 auto;
+	overflow: hidden; 
+	/* position: relative; */
+	background: black;
+}
+
+.marqee > ul {
+	padding-left: 0;
+	display: flex;
+	list-style-type: none;
+	animation: marqee 90s linear infinite;
+	/* position: absolute; */
+}
+
+.marqee > ul > li {
+	white-space: nowrap;
+	margin-right: 2em;
+	font-weight: bold;
+	color: yellow;
+}
+
+@keyframes marqee {
+	0% {
+		left: 100%;
+		transform: translateX(0%);
+	}
+
+	100% {
+		left: 0;
+		transform: translateX(-100%);
+	}
+}
+
+
+    </style>
+<body>
+
+    <div class="marqee">
+        <ul>
+            <li>2017 WBC A組預賽賽程</li>
+            <li>3/6 17:30 以色列 @ 南韓</li>
+            <li>3/7 11:00 以色列 @ 中華台北</li>
+            <li>3/7 17:30 南韓 @ 荷蘭</li>
+            <li>3/8 17:30 中華台北 @ 荷蘭</li>
+            <li>3/9 11:00 荷蘭 @ 以色列</li>
+            <li>3/9 17:30 南韓 @ 中華台北</li>
+        </ul>
+    </div>
+</body>
+    
+</body>
+</html>

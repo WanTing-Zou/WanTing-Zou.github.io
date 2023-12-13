@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新的NAV</title>
+
+
+<style>
+    *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', Helvetica , "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei",Arial,sans-serif;
+    /* border: 1px solid rgb(255, 255, 255); */
+    }
+
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: "微軟正黑體", Arial, Helvetica, sans-serif;
+    }
+
+    a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    display: flex;
+    }
+
+    header{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    }
+
+    nav{
+    width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    /* border: 1px solid gray; */
+    margin: 0 auto;
+    background-color: black;
+    }
+  
+
+.header-links-wrap {
+  display: flex;
+  text-align: center;
+  line-height: 30px;
+  font-size: 14px;
+}
+
+.header-links-wrap a{
+  padding: 15px;
+  margin: 0 15px;
+}
+
+.header-links-wrap a:hover, .dropdown:hover{
+  background: #8C720E;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.container{
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.dropdown{
+  position: relative;
+  display: inline-block;
+  padding: 15px;
+  margin: 0 15px;
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  color: #000;
+  background-color: #ffffff;
+  min-width: 109px;
+  text-align: center;
+  margin-top: 15px;
+  margin-left: -15px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a{
+  padding: 10px;
+  margin: 0;
+}
+
+nav a.img{
+width: 20%;
+overflow: hidden;
+display: block;
+margin: auto 0;
+}
+
+nav a.img > img{
+width: 70%;
+/* overflow: hidden; */
+display: block;
+margin: 0 100px 0px 0px;
+}
+
+div.dropdown span.wh{
+color: white;
+text-align: center;
+line-height: 30px;
+
+}
+/* header end */
+
+/* <!------------------BANNER BOX----------------> */
+
+div.bannerbox{
+width: 100%;
+height: 40vh;
+overflow: hidden;
+position: relative;
+}
+
+div.bannerbox > img{
+width: 100%;
+height: 100%;
+background-color: rgba(255, 255, 255, 0.705);
+object-fit: cover;
+}
+
+div.social-media{
+color: black;
+}
+/* 節目單 */
+/* <!---------------------tittle-------------------> */
+/* -----------/////////標頭使用code/////////////--------- */
+div.titbox a{
+text-decoration: none;
+color: black;
+}
+
+div.titbox{
+margin-top: 80px;
+margin-bottom: 10px;
+}
+
+div.outside_titl{
+width: 100%;
+/* border: 1px solid blue; */
+}
+
+div.tittle{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+/* border: 1px solid green; */
+}
+
+div.tittle > div.icon_R,
+div.tittle > div.tit_h3,
+div.tittle > div.icon_L{
+width:9%;
+}
+
+div.tittle > div.tit_en{
+width:100%
+}
+
+div.tittle > div.icon_R:nth-child(1),
+div.tittle > div.icon_L:nth-child(3){
+width: 1.8%;
+}
+
+div.titbox a{
+text-decoration: none;
+color: black;
+}
+
+div.titbox{
+ margin-top: 50px
+ }
+
+div.outside_titl{
+width: 100%;
+/* border: 1px solid blue; */
+}
+
+div.tittle{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+/* border: 1px solid green; */
+}
+
+div.tittle > div.icon_R,
+div.tittle > div.tit_h3,
+div.tittle > div.icon_L{
+width:9%;
+}
+
+div.tittle > div.tit_en{
+width:100%
+}   
+
+div.tittle > div.icon_R:nth-child(1),
+div.tittle > div.icon_L:nth-child(3){
+width: 1.8%;
+}
+
+div.stage_outer{
+width: 100%;
+/* border: 2px solid palevioletred; */
+}
+
+/* ----文字----- */
+div.outside_titl div.tittle div.icon_R > img,
+div.outside_titl div.tittle div.icon_L > img{
+width: 100%;
+margin-top: 5px;
+}
+
+div.outside_titl div.tittle div.tit_h3{
+text-align: center;
+line-height: 30px;
+color: #8C720E;
+font-size: 25px;
+width: 15%;
+}
+
+div.outside_titl div.tittle div.tit_en{
+text-align: center;
+color:#8C720E;;
+font-size: 18px;
+}
+
+div.buttom{
+/* border: 1px solid palegreen; */
+display: inline-block;
+top: 0;
+margin-left: 67%
+}
+
+/* <!------------------音樂節目單START----------------> */
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+    width: 100%;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    margin-top: 40px;
+    }
+
+    .middle_img{
+    flex-basis: 20%;
+    width: 20%;
+    background-color: gold;
+    }
+
+    .left{
+    flex-basis: 10%;
+    /* background-color: skyblue; */
+    text-align: center;
+    }
+
+    .section{
+    flex-basis: 65%;
+    background-color: #f6f6f6;
+    }
+
+    div.wrapper div.vp{
+    margin: 20px;
+    margin: 0 auto;
+    /* height: 200px; */
+    }
+
+/* ----------------side文字處理-------------- */
+    p.co_ch{
+    /* border: 1px solid green; */
+    font-size: 30px;
+    color: #000000;
+    border-left: 1px solid #000000;
+    font-weight: bold;
+    writing-mode: vertical-lr;
+    padding: 10px;
+    margin: auto;
+    }
+
+    p.co_en{
+    font-size: 16px;
+    color: #000000;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    transform: translateY(-90px);
+    font-family: "roboto";
+    }
+
+    div.middle_img > img{
+        width: 100%;
+        height: 100%;
+    }
+    
+/* ----------------MUSIC CLASS MENU-------------- */
+
+    div.vp > h4{
+    color: #ffffff;
+    background-color: #8C9C76;
+    line-height: 2.2em;
+    font-size: 16px;
+    width: 25%;
+    margin-bottom: 3px;
+    /* padding: 5px; */
+    }
+
+    div.vp > h2{
+    font-size: 26px;
+    color: #2e2e2e;
+    margin: 0;
+    line-height: 1em;
+    padding-top: 20px;
+    }
+
+    div.center > p.time{
+    font-size: 14px;
+    line-height: 2em;
+    }
+
+    div.center > p.mu_content{
+    font-size: 16px;
+    line-height: 2em;
+    margin: 10px 0px 10px 0px;
+    }
+
+    div.center{
+    /* border: 2px solid palevioletred; */
+    width: 80%;
+    }
+
+    div.mu{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    display: inline-block;
+    text-align: center;
+    width: 20%;
+    margin: 6% 40%;
+    padding: 10px 0px;
+    }
+
+    div.mu > a{
+        color: black;
+    }
+
+    div.guide{
+    /* border: 1px solid rebeccapurple; */
+    max-width: 1200px;
+    width: 100%;
+    border-bottom: 1px solid rgb(49, 49, 49);
+    margin: 0 auto;
+    padding: 30px 0px 10px 0px;
+    }
+
+    div.music_container{
+    /* border: 1px solid hotpink; */
+    max-width: 1200px;
+    width: 100%;
+    margin: 30px auto;
+    }
+
+    a{
+    text-decoration: none;
+    }
+
+/* /////////////////////footer//////////////////////// */
+    footer.footer{
+    /* border: 3px solid black; */
+    width: 100%;
+    background-color: #F6F6F6;
+    padding-top: 20px;
+    }
+
+    div.footer_outline{
+    display: flex;
+    /* border: 2px solid blue; */
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    }
+
+    div.ft_block{
+    /* border: 3px solid palevioletred; */
+    width: 40%;
+    margin: 10px;
+    }
+
+    div.ft_block:nth-child(1){
+    width: 25%;
+    }
+
+    div.logo{
+    margin: auto 0;
+    }
+
+    div.ft_item .logo > img{
+    width: 100%;
+    }
+
+    div.infor td.ttl{
+    line-height: 40px;
+    padding: 0px 40px 0px 30px;
+    text-align: justify;
+    }
+
+    div.input_button{
+    /* border: 2px solid gold; */
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 25px 0px;
+    }
+
+    div.input_button .email{
+    width: 30%;
+    }
+
+    div.input_button div.ad{
+    width: 75%;
+    }
+
+    div.input_button > input{
+    padding: 10px;
+    font-size: 20px;
+    }
+
+    div.input_button div.click{
+    background-color: black;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 40px;
+    }
+
+    div.input_button div.click > a{
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 40px;
+    }
+    
+
+    div.copyright{
+    width: 100%;
+    background: #000000;
+    color: white;
+    text-align: center;
+    height: 50px;
+    padding-top: 12px;
+    border-top: 1px solid white;
+    font-size: 15px;
+    }
+
+    div.copyright > pre{
+    line-height: 22px;
+    }
+
+/* ----------------MUSIC CLASS MENU-------------- */
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a  class="img" href="./index.html">
+          <img src="./img/nav_logo_white.png" alt="logo">
+        </a>
+        
+        <div class="header-links-wrap">
+            <div class="dropdown">
+                <span class="wh">關於我們<br>
+                    <p class="en">ABOUT</p>
+                </span>
+                <div class="dropdown-content">
+                  <a href="#">
+                    <div class="social-media">Facebook</div>
+                  </a>
+                  <hr style="margin: 0">
+                  <a href="#">
+                    <div class="social-media">Instagram</div>
+                  </a>
+                  <hr style="margin: 0">
+                  <a href="#">
+                    <div class="social-media">團長</div>
+                  </a>
+                </div>
+              </div>
+            <div class="dropdown">
+                <span class="wh">音樂會<br>
+                    <p class="en">CONCERT</p>
+                </span>
+                <div class="dropdown-content">
+                  <a href="#">
+                    <div class="social-media">最新節目單</div>
+                  </a>
+                  <hr style="margin: 0">
+                  <a href="#">
+                    <div class="social-media">Instagram</div>
+                  </a>
+                </div>
+            </div>
+            <a href="./contact.html">
+                <span>最新消息<span><br>
+                <p>LATEST NEWS</p>  
+            </a>
+        
+          <div class="dropdown">
+            <span class="wh">演出成果<br>
+                <p class="en">RESULT</p>
+            </span>
+            <div class="dropdown-content">
+              <a href="#">
+                <div class="social-media">Facebook</div>
+              </a>
+              <hr style="margin: 0">
+              <a href="#">
+                <div class="social-media">Instagram</div>
+              </a>
+            </div>
+        </div>
+        <a href="./contact.html">
+            <span>團員招募<span><br>
+            <p class="en">RECRUIT</p>  
+        </a>
+    </nav>
+<!------------------------------------BANNER BOX------------------------------->
+    <div class="bannerbox">
+        <img src="./img/content.jpg" alt="">
+    </div>
+<!------------------------------------節目單------------------------------->
+    <div class="titbox">
+        <div class="outside_titl">
+            <div class="tittle">
+                <div class="icon_R">
+                    <img src="./img/tittle_icon.png" alt="">
+                </div>
+                <div class="tit_h3">
+                    <h3>最新節目單</h3>
+                </div>
+                <div class="icon_L">
+                    <img src="./img/tittle_icon.png" alt="">
+                </div>
+                <div class="tit_en">
+                    <h5>CONCERT</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="music_container">
+            <div class="buttom">
+                <p>分類</p>
+                <select name="misiclass_list" width="300" height="300" style="width: 300px",style= "height: 300px">
+                <option value="1">年度大型演出</option>
+                <option value="2">親子系列</option>
+                <option value="3">公益活動</option>
+                <option value="4">巡迴系列</option>
+                <option value="5">大眾系列</option>
+                <option value="6">經典系列</option>
+                <option value="4" selected>看全部</option>
+                </select>
+            </div>
+            <div class="wrapper">
+                <div class="left vp">
+                    <p class="co_ch">年度公演</p>
+                    <br>
+                    <p class="co_en">TBC concert</p>
+                </div>
+        
+                <div class="middle_img vp">
+                    <img src="/img/musiuclass_01.jpg" alt="">
+                    <p></p>
+                </div>
+                
+                <div class="section">
+                    <div class="center vp">
+                        <h4>1 0 9 . 0 6 . 1 2 </h4>
+                        <h2>黃金號角手與朋友們</h2>
+                        <br>
+                        <hr>
+                        <p class="time place">14:30<br>新竹縣文化局演藝廳(2F)</p>
+                        <p class="mu_content">法國號演奏家弗拉柯維克擁有樂團及室內樂豐富經歷，
+                            這次將與NSO 獨奏家及音樂家朋友們帶來兩首法國號經典室內樂曲。</p>
+        
+                        <div class="mu btn">
+                            <a href="#"><p>READ MORE</p></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        
+            <div class="wrapper">
+                <div class="left vp">
+                    <p class="co_ch">年度公演</p>
+                    <br>
+                    <p class="co_en">TBC concert</p>
+                </div>
+        
+                <div class="middle_img vp">
+                    <img src="/img/musiuclass_01.jpg" alt="">
+                </div>
+                
+                <div class="section">
+                    <div class="center vp">
+                        <h4>1 0 9 . 0 6 . 1 2 </h4>
+                        <h2>黃金號角手與朋友們</h2>
+                        <br>
+                        <hr>
+                        <p class="time place">14:30<br>新竹縣文化局演藝廳(2F)</p>
+                        <p class="mu_content">法國號演奏家弗拉柯維克擁有樂團及室內樂豐富經歷，
+                            這次將與NSO 獨奏家及音樂家朋友們帶來兩首法國號經典室內樂曲。</p>
+        
+                        <div class="mu btn">
+                            <a href="#"><p>READ MORE</p></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        
+            <div class="wrapper">
+                <div class="left vp">
+                    <p class="co_ch">年度公演</p>
+                    <br>
+                    <p class="co_en">TBC concert</p>
+                </div>
+        
+                <div class="middle_img vp">
+                    <img src="/img/musiuclass_01.jpg" alt="">
+                </div>
+                
+                <div class="section">
+                    <div class="center vp">
+                        <h4>1 0 9 . 0 6 . 1 2 </h4>
+                        <h2>黃金號角手與朋友們</h2>
+                        <br>
+                        <hr>
+                        <p class="time place">14:30<br>新竹縣文化局演藝廳(2F)</p>
+                        <p class="mu_content">法國號演奏家弗拉柯維克擁有樂團及室內樂豐富經歷，
+                            這次將與NSO 獨奏家及音樂家朋友們帶來兩首法國號經典室內樂曲。</p>
+        
+                        <div class="mu btn">
+                            <a href="#"><p>READ MORE</p></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        
+            <div class="wrapper">
+                <div class="left vp">
+                    <p class="co_ch">年度公演</p>
+                    <br>
+                    <p class="co_en">TBC concert</p>
+                </div>
+        
+                <div class="middle_img vp">
+                    <img src="/img/musiuclass_01.jpg" alt="">
+                </div>
+                
+                <div class="section">
+                    <div class="center vp">
+                        <h4>1 0 9 . 0 6 . 1 2 </h4>
+                        <h2>黃金號角手與朋友們</h2>
+                        <br>
+                        <hr>
+                        <p class="time place">14:30<br>新竹縣文化局演藝廳(2F)</p>
+                        <p class="mu_content">法國號演奏家弗拉柯維克擁有樂團及室內樂豐富經歷，
+                            這次將與NSO 獨奏家及音樂家朋友們帶來兩首法國號經典室內樂曲。</p>
+        
+                        <div class="mu btn">
+                            <a href="#"><p>READ MORE</p></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        
+            <div class="wrapper">
+                <div class="left vp">
+                    <p class="co_ch">年度公演</p>
+                    <br>
+                    <p class="co_en">TBC concert</p>
+                </div>
+        
+                <div class="middle_img vp">
+                    <img src="/img/musiuclass_01.jpg" alt="">
+                </div>
+                
+                <div class="section">
+                    <div class="center vp">
+                        <h4>1 0 9 . 0 6 . 1 2 </h4>
+                        <h2>黃金號角手與朋友們</h2>
+                        <br>
+                        <hr>
+                        <p class="time place">14:30<br>新竹縣文化局演藝廳(2F)</p>
+                        <p class="mu_content">法國號演奏家弗拉柯維克擁有樂團及室內樂豐富經歷，
+                            這次將與NSO 獨奏家及音樂家朋友們帶來兩首法國號經典室內樂曲。</p>
+        
+                        <div class="mu btn">
+                            <a href="#"><p>READ MORE</p></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+    
+        </div>
+
+</body>
+<!--------------------------FOOTER---------------------->
+
+<footer class="footer">
+    <div class="footer_outline ft_item">
+        <div class="ft_block logo">
+            <img src="./img/footer-logo.png" alt="">
+        </div>
+
+        <div class="ft_block infor">
+            <table>
+                <tr>
+                    <td class="ttl">團練地點：</td>
+                    <td class="p">320桃園市中壢區中大路300號
+                        <br>工程二館 資策會大樓</td>
+                </tr>
+
+                <tr>
+                    <td class="ttl">連絡電話：</td>
+                    <td class="p">(03)425-7387</td>
+                </tr>
+
+                <tr>
+                    <td class="ttl">服務信箱：</td>
+                    <td class="p">tibame@gmail.com</td>
+                </tr>
+
+                <tr>
+                    <td class="ttl">瀏覽人數：</td>
+                    <td class="p">10,477,256/人</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="ft_block co">
+            <h2>輸入信箱訂閱電子報</h2>
+            <div class="input_button">
+                <div class="email ad">
+                    <input type="text" style="padding: 10px 130px 10px 10px;" name="e-mail" placeholder="Email address" >
+                </div>
+
+                <div class="email click">
+                    <a href="#"><p>SUBSCRIBE</p></a>
+                </div>    
+            </div>
+            <div class="remarks">
+                <pre>隱私宣告  ｜ 資訊安全  ｜  版權宣告  ｜  聯絡我們 ｜  常見問答</pre>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <pre class="copri">&copy; 2020 HSINCHU WINDS CO.LTD.ALL RIGHTS RESERVED</pre>
+    </div>
+
+</footer>
+</html>

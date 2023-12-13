@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', Helvetica , "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei",Arial,sans-serif;
+    }
+
+    a{
+    text-decoration: none;
+    }
+
+    footer.footer{
+    /* border: 3px solid black; */
+    width: 100%;
+    background-color: #F6F6F6;
+    padding-top: 20px;
+    }
+
+    div.footer_outline{
+    display: flex;
+    /* border: 2px solid blue; */
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    }
+
+    div.ft_block{
+    /* border: 3px solid palevioletred; */
+    width: 40%;
+    margin: 10px;
+    }
+
+    div.ft_block:nth-child(1){
+    width: 25%;
+    }
+
+    div.logo{
+    margin: auto 0;
+    }
+
+    div.ft_item .logo > img{
+    width: 100%;
+    }
+
+    div.infor td.ttl{
+    line-height: 40px;
+    padding: 0px 40px 0px 30px;
+    text-align: justify;
+    }
+
+    div.input_button{
+    /* border: 2px solid gold; */
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 25px 0px;
+    }
+
+    div.input_button .email{
+    width: 30%;
+    }
+
+    div.input_button div.ad{
+    width: 75%;
+    }
+
+    div.input_button > input{
+    padding: 10px;
+    font-size: 20px;
+    }
+
+    div.input_button div.click{
+    background-color: black;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 40px;
+    }
+
+    div.input_button div.click > a{
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 40px;
+    }
+    
+    div.click >p.sub_click{ 
+    color: white;
+    }
+
+    div.copyright{
+    width: 100%;
+    background: #000000;
+    color: white;
+    text-align: center;
+    height: 50px;
+    padding-top: 12px;
+    border-top: 1px solid white;
+    font-size: 15px;
+    }
+
+    div.copyright > pre{
+    line-height: 22px;
+    }
+
+    @media screen and (max-width:768px){
+        div.footer_outline {
+            flex-wrap: wrap;
+            padding-top: 30px;
+        }
+        div.ft_block:nth-child(1) {
+            width: 40%;
+        }
+        div.ft_block {
+            width: 60%;
+            margin: 0;
+        }
+        div.ft_block.co {
+            width: 100%;
+            margin: 0;
+        }
+        .remarks {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        div.input_button .email input{
+            width: 95%;
+        }
+       
+    }

@@ -1,0 +1,9 @@
+// svg-icon-close
+@function svg-icon-close($color) {
+	@return url('data:image/svg+xml,<svg width="23" height="23" xmlns="http://www.w3.org/2000/svg">
+		<g transform="translate(-1 -1)" fill="#{hexToUrl($color)}" fill-rule="nonzero">
+		<rect transform="rotate(-45 12.585 12.585)" x="-2.12" y="10.855" width="29.412" height="3.46" rx="1.592"/>
+		<rect transform="rotate(45 12.585 12.585)" x="-2.12" y="10.855" width="29.412" height="3.46" rx="1.592"/>
+		</g>
+		</svg>');
+}

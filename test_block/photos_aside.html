@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>photos_aside</title>
+
+    <style>
+
+.itemContainer{
+    margin: 3%;
+    flex-direction: column;
+    width: 42%;
+    }
+
+    .itemContainer:nth-child(1){
+    /* margin-right: 80px; */
+    flex-direction: column;
+    width: 30%;
+    /* border: 4px solid green; */
+    }
+
+        
+    .item{
+    width: 350px;
+    margin-bottom: 10px;
+    background: #f6f6f6;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: left 1s;
+    }
+    
+    .move{
+    top: 0;
+    left: -350px;
+    }
+
+    .itemImg{
+    width: 100%;
+    }
+
+    .dpInfo{
+    padding: 5px 10px;
+    position: relative;
+    }
+    
+    /* .avatar{
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    } */
+
+    .username {
+    margin-left: 5px;
+    }
+
+
+    div.itemContainer ul{
+    list-style: none;
+    line-height: 50px;
+    font-size: 14px;
+    }
+
+    li.num{
+    font-size: 22px;
+    }
+
+    div.itemContainer hr{
+    width: 60%;
+    }
+
+    div.itemContainer  div.item  p.text{
+    line-height: 36px;
+    margin-top: 10px;
+    font-size: 8px;
+    /* font-size: 30px; */
+    }
+
+    /* ---------------這段是為了要控制被其他屬性覆寫的指令------------------ */
+    div.itemContainer  div.item div.wh  ul.photolist > li > a{
+    text-decoration: none;
+    color: black;
+    }
+    
+    div.dpInfo span.username{
+    font-size: 12px;
+    }   
+
+    /* 展開的按鈕 */
+    div.right_sidebar button.btn_drawer{
+    background-color: black;
+    color: white;
+    border: 0;
+    font-size: 1rem; /* 16px */
+    width: 1.8em;    /* 相對於這個元素的文字大小 */
+    padding: 4px 0;
+    line-height: 1.6;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    text-align: center;
+    outline: none;
+    position: fixed;
+    top: 100px;
+    left: 350px;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="itemContainer">
+        <div class="item">
+            <div class="dpInfo">
+                <div class="username wh">
+                    <ul class="photolist">
+                        <li class="num">2020年</li>
+                        <li>大新竹小管樂【室內樂篇】</li>
+                        <li>大新竹管樂團</li>
+                    </ul>
+                    <hr>
+                    
+                    <ul class="photolist">
+                        <li class="num">2019年</li>
+                        <a href="#"><li>一起長大的「動漫史」</a></li>
+                        <li>大新竹管樂團大眾系列 II</li>
+                    </ul>
+
+                    <ul class="photolist">
+                        <li>萬事屋音樂會</li>
+                        <li>大新竹管樂團巡迴系列 I</li>
+                    </ul>
+                    <hr>
+                    <ul class="photolist">
+                        <li class="num">2018年</li>
+                        <li>輕旅行海洋</li>
+                        <li>大新竹管樂團大眾系列一</li>
+                    </ul>
+
+                    <ul class="photolist">
+                        <li>新～新～新世界</li>
+                        <li>大新竹管樂團經典系列 II</li>
+                    </ul>
+                    <hr>
+                    
+                    <ul>
+                        <li class="num">2017年</li>
+                        <li>[自然系列音樂會二]自然人</li>
+                        <li>大新竹管樂團年度大型音樂會</li>
+                    </ul>
+
+                    <ul>
+                        <li>天馬傳說</li>
+                        <li>大新竹管樂團親子系列音樂會</li>
+                    </ul>
+                    <ul>
+                        <li>管樂chamber便利貼</li>
+                        <li>大新竹管樂團經典系列 I</li>
+                    </ul>
+                    <hr>
+
+                    <ul>
+                        <li class="num">2016年</li>
+                        <li>咦？我們的愛不一樣!?</li>
+                        <li>105年度親子音樂會</li>
+                    </ul>
+                    <hr>
+
+                    <ul>
+                        <li class="num">2015年</li>
+                        <li>夢想傳奇</li>
+                        <li>大新竹管樂團創團音樂會</li>
+                    </ul>
+                    <ul>
+                        <li>《回歸•大地》音樂會</li>
+                        <li>2015下半年度音樂會</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="right_sidebar">
+        <button type="button" class="btn_drawer">展開</button>
+        右側的內容
+      </div>
+
+      <script src="./js/jquery-3.5.1.min.js"></script>
+    
+      <script>
+        //   $(".btn_drawer").click(function(){
+        //     if(".item".css({left: "-350"})){
+        //         $(".item".animate({left: "350"},1000));
+        //     }else{
+        //         $(".item".animate({left: "-350"},1000));
+        //     }
+        //   });
+
+        // $(function(){
+        //     $(".btn_drawer").click(function(){
+        //         if($(".item").css({left: -350})){
+        //             $(".item").css({left: 0});
+        //         }
+        //     });
+    
+        //     $(".btn_drawer").click(function(){
+        //         if($(".item").css({left: 0})){
+        //             $(".item").css({left: -350});
+        //         }                
+        //     });
+        // });
+
+        $(function(){
+            $(".btn_drawer").on("click", function(){
+                $(".item").toggleClass("move");
+            })
+        });
+
+      </script>
+</body>
+</html>

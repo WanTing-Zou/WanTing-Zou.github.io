@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', Helvetica , "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei",Arial,sans-serif;
+}
+
+div.outerWrap{
+    border: 1px solid blue;
+    width: 100%;
+    background: #000000;
+}
+
+
+.wrap{
+  width: 1200px;
+  height: 100px;
+  margin: 0 auto;
+  border: 1px solid blue;
+}
+
+img{
+  width: 16%;
+  float: left;
+  overflow: hidden;
+  margin: 12px 0px 0px 90px; 
+  /* border: 1px solid rgb(255, 255, 255); */
+}
+
+nav.navbox{
+  float: right;
+  padding: 22px 10px;
+  text-align: center;
+  font-size: 0;
+}
+
+nav.navbox ul{
+  margin: 0;
+  list-style-type: none;
+}
+nav.navbox li{
+  padding: 5px 20px;
+  float: left;
+}
+
+/* 滑鼠浮動特效 */
+nav.navbox li:hover{ 
+  background-color:#8C720E;
+  opacity: 1;
+}
+
+nav.navbox a{
+  padding: 0 10px;
+  text-decoration: none;
+  color: white;
+}
+
+nav.navbox span{
+/* border: 1px solid green; */
+font-size: 16px;
+text-align: center;
+}
+
+nav.navbox p{
+/* border: 1px solid green; */
+padding: 10px 0px 0px 10px;
+font-size: 12px;
+}
+
+.content{
+  clear: both;
+}
+
+    </style>
+
+
+</head>
+<body>
+
+
+<div class="outerWrap">
+    <div class="header">
+        <!--容器分為左圖右導覽連結 -->
+        <div class="wrap">
+            <img src="./img/nav_logo_white.png" width="" alt="dd"/>
+          <!--導覽列 -->
+          <nav class="navbox">
+            <ul>
+              <li>
+                <a href="#"><span>關於我們</span><br><p>ABOUT</p></a>
+              </li>
+              <li>
+                <a href="#"><span>音樂會</span><br><p>CONCERT</p></a>
+              </li>
+              <li>
+                <a href="#"><span>最新消息</span><br><p>LATEST NEWS</p></a>
+              </li>
+              <li>
+                <a href="#"><span>演出成果</span><br><p>RESULT</p></a>
+              </li>
+              <li>
+                <a href="#"><span>團員招募</span><br><p>RECRUIT</p></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+    </div>
+</div>
+    
+    
+</body>
+</html>

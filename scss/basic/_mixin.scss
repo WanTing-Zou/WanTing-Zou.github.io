@@ -1,0 +1,56 @@
+// --------calculate px to vmin--------
+@function vw($target){
+	$vw-context: (375 * 0.01) * 1px;
+	@return ($target / $vw-context) * 1vw;
+}
+
+@function vh($target){
+	$vh-context: (667 * 0.01) * 1px;
+	@return ($target / $vh-context) * 1vh;
+}
+
+@function vmin($target){
+	$vmin-context: (375 * 0.01) * 1px;
+	@return ($target / $vmin-context) * 1vmin;
+}
+
+@function vmax($target){
+	$vmax-context: (667 * 0.01) * 1px;
+	@return ($target / $vmax-context) * 1vmax;
+}
+//--------------- Set Abosulte Center
+@mixin center($horizontal: true, $vertical: true) {
+	position: absolute;
+
+	@if ($horizontal and $vertical) {
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+	} @else if ($horizontal) {
+		left: 50%;
+		transform: translate(-50%, 0);
+
+	} @else if ($vertical) {
+		top: 50%;
+		transform: translate(0, -50%);
+	}
+}
+// 不能漸層
+@function no00($color) {
+	@return url('data:image/svg+xml,');
+}
+
+@function str-replace($string, $search, $replace: '') {
+	$index: str-index($string, $search);
+	@return if($index, 
+		str-slice($string, 1, $index - 1) + $replace + 
+		str-replace(str-slice($string, $index + 
+				str-length($search)), $search, $replace), 
+		$string);
+}
+
+@function hexToUrl($color) {
+	$newcolor: str-replace($color, '#', '%23');
+	@return $newcolor;
+}

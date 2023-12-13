@@ -1,0 +1,460 @@
+@import "./hamburger.css";
+@import "./footer_RWD.css";
+@import "./asidelink.css";
+
+/* <!------------------BANNER BOX----------------> */
+div.bannerbox{
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+    position: relative;
+    }
+    
+    div.bannerbox > img{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.705);
+    object-fit: cover;
+    }
+    
+    /* <!------------------導覽列----------------> */
+    div.guide {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 10px 30px 20px;
+    }
+    
+    div.guide hr.hr{
+    margin-top: 10px;
+    width: 90%;
+    }
+    /* <!------------------標題開始-----------------> */
+    div.heading{
+    width: 100%;
+    margin: 3% 0;
+    }
+    
+    div.hd{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    
+    div.hd > div.icon_R,
+    div.hd > div.tit_h3,
+    div.hd > div.icon_L{
+    width:20%;
+    text-align: center;
+    }
+    
+    div.hd > div.tit_en{
+    width:100%;
+    text-align: center;
+    }
+    
+    div.hd > div.icon_R:nth-child(1),
+    div.hd > div.icon_L:nth-child(3){
+    width: 40px;
+    }
+    
+    /* --------------標題文字+圖片----------------- */
+    div.heading div.hd div.icon_R > img,
+    div.heading div.hd div.icon_L > img{
+    width: 100%;
+    margin-top: 5px;
+    }
+    
+    div.heading div.hd div.tit_h3{
+    text-align: center;
+    line-height: 30px;
+    color: #8C720E;
+    font-size: 25px;
+    width: 300px;
+    }
+    
+    div.heading div.hd div.tit_en{
+    text-align: center;
+    color:#8C720E;;
+    font-size: 16px;
+    }
+
+/* <!-------------------品新竹-----------------> */
+div.concert01{
+    max-width: 1200px;
+    /* border: 1px solid red; */
+    display: flex;
+    background-color: #f6f6f6;
+    width: 100%;
+    margin: 6% auto;
+    }
+
+    div.concert01 div.concert_image {
+        width: 100%;
+        /* height: 308px; */
+        overflow: hidden;
+    }
+
+    div.concert01 div.concert_image > div img {
+        width: 100%;
+        height: 308px;
+        object-fit: cover;
+    }
+    
+    div.concert01 div.viewmore{
+    position: relative;
+    padding-left: 5%;
+    }
+    
+    div.concert01 div.viewmore div.block_pin div.taste{
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    border: 10px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    top: -40px;
+    left: -80px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.658);
+    z-index: 2;
+    }
+    
+    div.concert01 div.viewmore div.block_pin div.taste div.bgc{
+    position: relative;
+    z-index: 2;
+    background-color: rgb(212, 170, 56,0.8);
+    height: 100%;
+    }
+    
+    
+    div.concert01 div.viewmore div.taste div.pin{
+    font-size: 35px;
+    text-align: center;
+    }
+    
+    div.concert01 div.viewmore div.taste div.HC{
+    font-size: 28px;
+    text-align: center;
+    }
+    
+    div.concert01 div.viewmore div.taste div.HWC{
+    text-align: center;
+    font-size: 10px;
+    }
+    
+    div.concert01 div.viewmore div.recent_info{
+    padding: 20px;
+    }
+    
+    div.concert01 div.viewmore div.recent_info h2{
+    margin-top: 60px;
+    padding: 10px 0;
+    color: #000000;
+    font-size: 30px;
+    }
+    
+    div.concert01 div.viewmore div.recent_info p{
+    line-height: 50px;
+    }
+    
+    div.out{
+    width: 100%;
+    }
+    
+
+/* <!-----------------最新消息內文-----------------> */
+
+        div.main-content a{
+        text-decoration: none;
+        color: black;
+        }
+    
+        div.main-content ul{
+        list-style: none;
+        }
+    
+        div.main-content{
+        width: 100%;
+        /* border: 3px solid goldenrod; */
+        margin-top: 5%;
+        margin-bottom: 5%;
+        }
+        
+        div.news{
+        display: flex;
+        /* border: 3px solid palevioletred; */
+        width: 1200px;
+        max-width: 100%;
+        margin: 0 auto;
+        } 
+    
+        div.news div{
+        /* border: 3px solid palevioletred; */
+        flex-wrap: wrap;
+        margin: 0 auto;
+        }
+    
+        div.col-xs-12{
+        padding: 10px;
+        width: 15%;
+        }
+    
+        div.col-xs-12:nth-child(2){
+        width: 80%;
+        }
+    
+        div.news div.left-menu ul.menu{
+        line-height: 40px;
+        border: 1px solid gray;
+        padding: 10px;
+        }
+        
+        div.right-new table.table{
+        /* border: 3px solid green; */
+        width: 100%;
+        line-height: 40px;
+        }
+    
+        div.right-new th{
+        text-align: center;
+        background-color: #8C720E;
+        color: white;
+        }
+    
+        div.right-new td{
+        background-color: #f6f6f6;
+        color: rgb(0, 0, 0);
+        padding: 20px;
+        }
+    
+        div.right-new tr > td.time{
+        text-align: right;
+        width: 20%;
+        }
+
+/* -----------------手機版展開內文---------------- */
+div.topnwes_block{
+    /* border: 2px solid green; */
+    width: 100%;
+    padding: 10px 10px;
+    display: none;
+}
+
+div.news_content{
+    width: 100%;
+    background-color: rgb(145, 152, 159);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+div.topnwes_block div.ne-click{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+div.ne-click > h4{
+    width: 100%;
+}
+
+div.current-li > ul{
+    list-style: none;
+    text-align: center;
+}
+
+div.current-li ul >li{
+    background-color: #f6f6f6;
+    padding: 10px;
+    font-size: 12px;
+}
+
+div.current-li ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+/* ----------------------GO TOP---------------------- */
+#gotop a{
+    text-decoration: none;
+}
+
+#gotop {
+    position:fixed;
+    z-index:90;
+    right:20px;
+    bottom:31px;
+    display:none;
+    width:40px;
+    height:40px;
+    color:#fff;
+    background: #8C720E;
+    line-height:40px;
+    border-radius:50%;
+    transition:all 0.5s;
+    text-align: center;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    }
+
+/* -----------------RWD-------------- */
+
+    main{
+        width: 100;
+        /* border: 3px solid red; */
+        margin: 0 auto;
+    }
+
+    @media screen and (max-width: 575px){
+    main{
+        width: 100%;
+        /* border: 1px solid purple; */
+    }
+    div.concert01 div.viewmore div.block_pin div.taste div.bgc {
+        line-height: inherit;
+        font-size: xx-large;
+    }
+
+    div.right-new tr > td.time {
+        width: 0px;
+    }
+    div.concert01 div.viewmore div.taste div.pin{
+        font-size: 18px;
+    }
+
+    div.concert01 div.viewmore div.taste div.HC{
+        font-size: 15px;
+    }
+
+    div.concert01 div.viewmore div.block_pin div.taste {
+        width: 100%;
+        height: 20%;
+        border: none;
+        border-radius: none;
+        left: 0px;
+        top: 0px;
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    div.news div.left-menu ul.menu {
+        line-height: 30px;
+    }
+    
+    div.right-new td {
+        /* padding: 6px; */
+        font-size: 14px;
+    }
+
+    div.hd > div.icon_R:nth-child(1),
+    div.hd > div.icon_L:nth-child(3) {
+        display: none;
+    }
+
+    div.concert01 div.viewmore div.recent_info h2 {
+    font-size: 20px;
+    }
+    div.concert01 div.viewmore div.recent_info p {
+    line-height: 30px;
+    }
+
+    div.main-content div.left-menu{
+        display: none;
+    }
+
+    div.topnwes_block{
+        display: block;
+    }
+
+    div.col-xs-12:nth-child(2) {
+        width: 100%;
+    }
+    }
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+    main{
+      width: 540px;
+      /* border: 2px solid rgb(47, 134, 206); */
+    }
+
+    div.concert01 div.viewmore div.block_pin div.taste div.bgc {
+        line-height: inherit;
+        font-size: xx-large;
+    }
+
+    div.right-new tr > td.time {
+        width: 0px;
+    }
+    div.concert01 div.viewmore div.taste div.pin{
+        font-size: 18px;
+    }
+
+    div.concert01 div.viewmore div.taste div.HC{
+        font-size: 15px;
+    }
+
+    div.concert01 div.viewmore div.block_pin div.taste {
+        width: 40px;
+        height: 130px;
+        border: none;
+        border-radius: none;
+        left: 0px;
+        top: 0px;
+        background-color: rgba(255, 255, 255, 0);
+        }
+
+        div.right-new td {
+            padding: 10px;
+            font-size: 14px;
+        }
+        div.main-content div.left-menu{
+            display: none;
+        }
+
+        div.topnwes_block{
+            display: block;
+        }
+
+        div.col-xs-12:nth-child(2) {
+            width: 100%;
+        }
+
+    }
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    main{
+      width: 720px;
+      /* border: 2px solid rgb(42, 158, 58); */
+    }
+
+    div.concert01 div.viewmore div.block_pin div.taste div.bgc {
+        line-height: inherit;
+        font-size: xx-large;
+    }
+
+    div.right-new tr > td.time {
+        width: 0px;
+    }
+    div.concert01 div.viewmore div.taste div.pin{
+        font-size: 18px;
+    }
+
+    div.concert01 div.viewmore div.taste div.HC{
+        font-size: 15px;
+    }
+
+    div.concert01 div.viewmore div.block_pin div.taste {
+        width: 40px;
+        height: 130px;
+        border: none;
+        border-radius: none;
+        left: 0px;
+        top: 0px;
+        background-color: rgba(255, 255, 255, 0);
+        }
+
+    }
+
+    @media screen and (max-width: 1200px){
+        #aside{
+            display: none;
+        }
+    }

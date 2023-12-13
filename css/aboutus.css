@@ -1,0 +1,173 @@
+@import "./footer.css";
+@import "./header.css";
+
+*{
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+font-family: 'Roboto', Helvetica , "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei",Arial,sans-serif;
+/* border: 1px solid gray; */
+}
+
+/* <!------------------BANNER BOX----------------> */
+div.bannerbox{
+width: 100%;
+height: 40vh;
+overflow: hidden;
+position: relative;
+}
+    
+div.bannerbox > img{
+width: 100%;
+height: 100%;
+background-color: rgba(255, 255, 255, 0.705);
+object-fit: cover;
+}
+    
+/* <!------------------導覽列----------------> */
+div.guide {
+max-width: 1200px;
+width: 100%;
+margin: 0 auto;
+padding: 30px 0px 10px 0px
+}
+    
+div.guide hr.hr{
+margin-top: 10px;
+width: 90%;
+}
+
+/* <!------------------標題開始-----------------> */
+    div.heading{
+    width: 100%;
+    margin: 3% 0;
+    }
+    
+    div.hd{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    
+    div.hd > div.icon_R,
+    div.hd > div.tit_h3,
+    div.hd > div.icon_L{
+    width:20%;
+    text-align: center;
+    }
+    
+    div.hd > div.tit_en{
+    width:100%;
+    text-align: center;
+    }
+    
+    div.hd > div.icon_R:nth-child(1),
+    div.hd > div.icon_L:nth-child(3){
+    width: 8%;
+    }
+    
+    /* --------------標題文字+圖片----------------- */
+    div.heading div.hd div.icon_R > img,
+    div.heading div.hd div.icon_L > img{
+    width: 30%;
+    margin-top: 5px;
+    }
+    
+    div.heading div.hd div.tit_h3{
+    text-align: center;
+    line-height: 30px;
+    color: #8C720E;
+    font-size: 25px;
+    width: 20%;
+    }
+    
+    div.heading div.hd div.tit_en{
+    text-align: center;
+    color:#8C720E;;
+    font-size: 16px;
+    }
+
+
+
+    div.link{
+    max-width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    width: 100%;
+    /* border: 3px solid greenyellow; */
+    margin: 0 auto;
+    }
+        
+        
+    div.link div.about,
+    div.link div.logoproduct{
+    font-size: 15px;
+    margin: 2% 2%;
+
+    }
+
+        
+    /* --------------內文開始----------------- */
+    div.article{
+    width: 100%;
+    /* border: 3px solid gold; */
+    }
+
+    div.article .line{
+    max-width: 900px;
+    width: 100%;
+    /* border: 3px solid rgb(53, 47, 14); */
+    margin:  auto;
+    padding: 10px;
+    }
+
+    div.article div.aboutus p{
+    font-size: 16px;
+    line-height: 50px;
+    }
+
+    div.article div.aboutus > h3{
+    text-align: center;
+    }
+
+    div.article div.aboutus div.topimg >img{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    }
+
+    div.aboutus div.abimg{
+    display: flex;
+    /* border: 2px solid hotpink; */
+    flex-direction: row;
+    width:100%;
+    justify-content: space-between;
+    margin: 15px 0px;
+    }
+
+    div.aboutus div.img{
+    /* border: 2px solid rgb(58, 13, 36); */
+    width: 30%;
+    }
+
+    div.aboutus div.img > img{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 30px;
+    }
+
+    div.last_text{
+    padding: 50px;
+    background-color: #f3f3f3;
+    text-align: center;
+    font-size: 16px;
+    color: #000000;
+    font-weight: bolder;
+    width: 50%;
+    margin: 3% auto;
+    }
+
+
+
+    

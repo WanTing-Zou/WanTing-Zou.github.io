@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+div.abs_outline{
+width: 100%;
+border: 3px solid rgb(8, 61, 16);
+}
+
+
+div.le_abs{
+    display: flex;
+    width: 1200px;
+    height: 100vh;
+    background-color: #ededed;
+    border: 3px solid darkblue;
+    margin: 0 auto;
+
+}
+div.ads_img{
+     position: relative;
+     display: inline-block;
+     height: 100%;
+}
+
+div.le_img{
+     width: 400px;
+     height: 100%;
+     background-color: rgb(245, 255, 245);
+     border: 3px solid red;
+}
+
+.toglebtn {
+     position: absolute;
+     top: 200px;
+     left: 100%;
+}
+
+.ri_abs{
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(212, 232, 241);
+    border: 3px solid red;
+    display: flex;
+    flex-direction: column;
+}
+
+div.ri_abs div{
+    border: 1px solid rgb(0, 0, 0);
+    height: 40%;
+    padding: 20px;
+    margin: 20px;
+} 
+    </style>
+
+</head>
+
+<body>
+    <div class="abs_outline">
+        <div class="le_abs">
+            <div class="abs_img">
+                <div class="le_img" id='bar'>
+                    bar
+                </div>
+            </div>
+
+            <div class="ri_abs">
+                <div class="01">hihi</div>
+                <div class="02">hihi</div>
+                <div class="03">hihi</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

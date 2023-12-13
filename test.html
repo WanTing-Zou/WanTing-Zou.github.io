@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-family: 'Roboto', Helvetica , "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei",Arial,sans-serif;
+    /* border: 1px solid gray; */
+    }
+
+    div.topnwes_block{
+        /* border: 2px solid green; */
+        width: 100%;
+        padding: 20px 10px;
+    }
+
+    div.news_content{
+        width: 100%;
+        background-color: black;
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    div.topnwes_block div.ne-click{
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+
+    div.ne-click > h3{
+        width: 98%;
+    }
+
+    div.current-li > ul{
+        list-style: none;
+        text-align: center;
+    }
+
+    div.current-li ul >li{
+        background-color: #f6f6f6;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    div.current-li ul li a{
+        text-decoration: none;
+        color: black;
+    }
+
+
+</style>
+<body>
+    <div class="topnwes_block">
+        <div class="news_content">
+            <div class="ne-click">
+                <h3>動態消息</h3>
+                <div><img src="./img/logo_news.png" alt=""></div>
+            </div>
+        </div>
+        <div class="current-li">
+            <ul>
+                <li><a href="">最新消息</a></li>
+                <hr>
+                <li><a href="">消息回顧</a></li>
+                <hr>
+                <li><a href="">電子報</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+		$(document).ready(function(){
+            $(".news_content").click(function(){
+                $(".current-li").toggle();
+		})
+    })
+    </script>
+
+</body>
+</html>

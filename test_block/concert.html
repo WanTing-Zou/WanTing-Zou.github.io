@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', Helvetica , "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei",Arial,sans-serif;
+    }
+
+    div.cont_outside{
+    width: 100%;
+    border: 5px solid rgb(243, 161, 8);
+    }
+
+    div.tittle{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+
+    div.tittle div{
+    border: 1px solid red;
+    
+    }
+
+    div.tittle > div.icon_R,
+    div.tittle > div.tit_h3,
+    div.tittle > div.icon_L{
+    width:20%;
+    }
+
+    div.tittle > div.tit_en{
+    width:100%
+    }
+
+    div.tittle > div.icon_R:nth-child(1),
+    div.tittle > div.icon_L:nth-child(3){
+    width: 6%;
+    }
+
+    div.stage_outer{
+    width: 100%;
+    border: 2px solid palevioletred;
+    }
+
+    ul{
+    border: 1px solid red;
+    padding:0;
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    }
+
+    ul > li{
+      list-style: none;
+      border: 2px solid blue;
+      box-sizing: border-box;
+      width: 100%;
+      padding: 10px;
+      margin: 10px;
+    }
+
+    ul > li:nth-child(1),
+    ul > li:nth-child(5){
+    margin: 10px 0px 10px 0px;
+    }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="concert">
+        <div class="cont_outside">
+            <div class="tittle">
+                <div class="icon_R">bbb</div>
+                <div class="tit_h3">ccc</div>
+                <div class="icon_L">fff</div>
+                <div class="tit_en">aaa</div>
+            </div>
+        </div>
+
+        </div>
+        <div class="concert_banners">
+            <ul>
+                <li>
+                    <a target="_blank" href="#">
+                        <div class="bannerimg_wrapper">
+                            <img src="#" alt="">
+                        </div>
+                        <div class="concert_info">
+                            <p>2020 NTSO遍撒音樂種子在社區室內樂經典音樂會</p>
+                            <hr>
+                            <p class="info_en">read more</p>
+                            <hr>
+                        </div>
+                    </a>
+    
+                </li>
+                <li>第二項</li>
+                <li>第三項</li>
+                <li>第四項</li>
+                <li>第五項</li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+</html>

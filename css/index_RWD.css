@@ -1,0 +1,146 @@
+
+
+/* ----------------home_section---------------- */
+@media screen and (max-width: 575px){
+    
+    div.heading div.hd div.icon_R > img, 
+    div.heading div.hd div.icon_L > img{
+        display: none;
+    }
+
+    div.home_section div.videos div.icon_R>img,
+    div.home_section div.videos div.icon_L>img{
+        display: none;
+    }
+
+    div.home_section div.latestnews div.icon_R>img,
+    div.home_section div.latestnews div.icon_L>img{
+        display: none;
+    }
+    div.storyplayer_right{
+        display: none;
+    }
+
+    div.ri_abs div.usblock > div.icon_R > img, 
+    div.ri_abs div.usblock > div.icon_L > img{
+        display: none;
+    }
+
+    div.ri_abs div.tit_about > h3 {
+        font-size: 22px;
+    }
+
+    div.heading div.hd.line.music div.tit_h3{
+        width: 300px;
+        }
+
+        div.ri_abs {
+            margin-bottom: 8%;
+        }
+
+        div.ri_abs div.abs_more > a> p {
+            line-height: 25px;
+        }
+        div.team_contact > div.command, div.team_contact > div.gucommand, div.team_contact > div.director, div.team_contact > div.vidirector, div.team_contact > div.master {
+            margin-top: 6%;
+        }
+        div.team_contact {
+            display: block;
+        }
+        div.music_capture{
+            width: 100%;
+        }
+        div.video_buttom div.more a > p{
+            line-height: 25px;
+        }
+  }
+
+    @media screen and (max-width:768px){
+    ul.owl {
+    flex-wrap: wrap;
+    }
+
+    div.outside_home_section {
+    flex-wrap: wrap
+    }
+
+    div.le_img {
+    width: 100%;
+    }
+
+    div.team_contact {
+    justify-content: center;
+    }
+
+    div.team_contact div {
+    width: 31%;
+    }
+
+    div.ri_abs div.abs_words{
+    line-height: 38px;
+    }
+    
+    div.ri_abs div.group_img {
+    display: none;
+    /* display: block; */
+    /* 要顯示就使用block;消失則用none */
+    }
+
+    div.abs_img div.le_img > img{
+    display: none;
+    }
+
+    div.music_capture h3 {
+        text-align: center;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    div.music_capture p {
+        line-height: 30px;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    div.heading div.hd div.icon_R > img, 
+    div.heading div.hd div.icon_L > img {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    div.heading div.hd div.tit_h3 {
+        font-size: 20px;
+        width: 230px;
+    }
+
+    div.team_contact div {
+        margin: 0 auto;
+    }
+
+    #aside{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:1024px){
+    div.storyplayer_right {
+        width: 45%;
+    }
+
+  }
+
+@media screen and (max-width: 1200px){
+    div.team_contact div{
+        width: 50%;
+        margin: 0 auto;
+    }
+    audio{
+        width: 100%;
+    }
+
+    div.contenter_infor3 ul {
+        width: 100%;
+        height: 150px;
+    }
+}

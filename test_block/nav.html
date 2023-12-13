@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', Helvetica , "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei",Arial,sans-serif;
+}
+
+    a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    display: flex;
+    }
+  
+
+    nav{
+    width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    /* border: 1px solid gray; */
+    margin: 0 auto;
+    background-color: black;
+    }
+  
+    .header-links-wrap {
+    display: flex;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    }
+  
+    .header-links-wrap a{
+    padding: 15px;
+    margin: 0 15px;
+    }
+  
+    .header-links-wrap a:hover, .dropdown:hover{
+    background: #8C720E;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    }
+  
+    .container{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    }
+  
+    .dropdown{
+    position: relative;
+    display: inline-block;
+    padding: 15px;
+    margin: 0 15px;
+    }
+  
+    .dropdown-content{
+    display: none;
+    position: absolute;
+    color: #000;
+    background-color: #ffffff;
+    min-width: 109px;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: -15px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    }
+  
+    .dropdown:hover .dropdown-content {
+    display: block;
+    }
+  
+    .dropdown-content a{
+    padding: 10px;
+    margin: 0;
+    }
+  
+    nav a.img{
+    width: 20%;
+    overflow: hidden;
+    display: block;
+    margin: auto 0;
+    }
+
+    nav a.img > img{
+    width: 65%;
+    overflow: hidden;
+    display: block;
+    margin: 0 100px 0px 0px;
+    }
+  
+    div.dropdown span.wh{
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    }
+
+    /* header end */
+
+  
+  /* <!------------------BANNER BOX----------------> */
+  
+  div.bannerbox{
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+  position: relative;
+  }
+  
+  div.bannerbox > img{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.705);
+  object-fit: cover;
+  }
+  
+  div.social-media{
+      color: black;
+  }
+</style>
+
+<body>
+    <nav>
+        <a  class="img" href="./index.html">
+          <img src="./img/nav_logo_white.png" alt="logo">
+        </a>
+        
+        <div class="header-links-wrap">
+            <div class="dropdown">
+                <span class="wh">關於我們<br>
+                    <p class="en">ABOUT</p>
+                </span>
+                <div class="dropdown-content">
+                  <a href="#">
+                    <div class="social-media">Facebook</div>
+                  </a>
+                  <hr style="margin: 0">
+                  <a href="#">
+                    <div class="social-media">Instagram</div>
+                  </a>
+                  <hr style="margin: 0">
+                  <a href="#">
+                    <div class="social-media">團長</div>
+                  </a>
+                </div>
+              </div>
+            <div class="dropdown">
+                <span class="wh">音樂會<br>
+                    <p class="en">CONCERT</p>
+                </span>
+                <div class="dropdown-content">
+                  <a href="#">
+                    <div class="social-media">最新節目單</div>
+                  </a>
+                  <hr style="margin: 0">
+                  <a href="#">
+                    <div class="social-media">Instagram</div>
+                  </a>
+                </div>
+            </div>
+            <a href="./contact.html">
+                <span>最新消息<span><br>
+                <p>LATEST NEWS</p>  
+            </a>
+        
+          <div class="dropdown">
+            <span class="wh">演出成果<br>
+                <p class="en">RESULT</p>
+            </span>
+            <div class="dropdown-content">
+              <a href="#">
+                <div class="social-media">Facebook</div>
+              </a>
+              <hr style="margin: 0">
+              <a href="#">
+                <div class="social-media">Instagram</div>
+              </a>
+            </div>
+        </div>
+        <a href="./contact.html">
+            <span>團員招募<span><br>
+            <p class="en">RECRUIT</p>  
+        </a>
+    </nav>
+
+</body>
+</html>

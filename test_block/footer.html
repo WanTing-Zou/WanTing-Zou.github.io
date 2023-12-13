@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer</title>
+    
+</head>
+    <style>
+    a{
+    text-decoration: none;
+    }
+
+    footer.footer{
+    /* border: 3px solid black; */
+    width: 100%;
+    background-color: #F6F6F6;
+    }
+
+    div.footer_outline{
+    display: flex;
+    /* border: 2px solid blue; */
+    width: 1200px;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    }
+
+    div.ft_block{
+    border: 3px solid palevioletred;
+    margin: 10px;
+    }
+
+    div.ft_block:nth-child(1){
+    width: 25%;
+    }
+
+    div.logo{
+    margin: auto 0;
+    }
+
+    div.ft_item .logo > img{
+    width: 100%;
+    }
+
+    div.infor td.ttl{
+    line-height: 40px;
+    padding: 0px 40px 0px 30px;
+    text-align: justify;
+    }
+
+    div.input_button{
+    /* border: 2px solid gold; */
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 25px 0px;
+    }
+
+    div.email > input {
+    width: 250px;
+    height: 40px;
+    }
+
+
+    div.input_button > input{
+    padding: 10px;
+    font-size: 20px;
+    }
+    
+    div.input_button .click {
+        background-color: black;
+        color: white;
+        text-align: center;
+        line-height: 5px;
+        padding: 2px;
+    }
+
+    div.click > p.sub_click{ 
+    color: white;
+    }
+
+    div.email > input{
+        width: 250px;
+    }
+
+    div.copyright{
+    width: 100%;
+    background: #000000;
+    color: white;
+    text-align: center;
+    height: 50px;
+    padding-top: 12px;
+    border-top: 1px solid white;
+    font-size: 15px;
+    }
+
+    div.copyright > pre{
+    line-height: 22px;
+    }
+
+    div.infor > table{
+        border: 3px solid green;
+        width: 100%;
+    }
+
+
+    </style>
+
+<body>
+
+    <footer class="footer">
+        <div class="footer_outline ft_item">
+            <div class="ft_block logo">
+                <img src="./img/footer-logo.png" alt="">
+            </div>
+
+            <div class="ft_block infor">
+                <table>
+                    <tr>
+                        <td class="ttl">團練地點：</td>
+                        <td class="p">320桃園市中壢區中大路300號
+                            <br>工程二館 資策會大樓</td>
+                    </tr>
+
+                    <tr>
+                        <td class="ttl">連絡電話：</td>
+                        <td class="p">(03)425-7387</td>
+                    </tr>
+
+                    <tr>
+                        <td class="ttl">服務信箱：</td>
+                        <td class="p">tibame@gmail.com</td>
+                    </tr>
+
+                    <tr>
+                        <td class="ttl">瀏覽人數：</td>
+                        <td class="p">10,477,256/人</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="ft_block co">
+                <h2>輸入信箱訂閱電子報</h2>
+                <div class="input_button">
+                    <div class="email ad">
+                        <input type="text" name="e-mail" placeholder="Email address" >
+                    </div>
+
+                    <div class="email click">
+                        <p class="sub_click">SUBSCRIBE</p>
+                    </div>
+                </div>
+                <div class="remarks">
+                    <span>隱私宣告  ｜ 資訊安全  ｜  版權宣告  ｜  聯絡我們 ｜  常見問答</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <pre class="copri">&copy; 2020 HSINCHU WINDS CO.LTD.ALL RIGHTS RESERVED</pre>
+        </div>
+
+    </footer>
+    
+</body>
+
+</html>

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', Helvetica , "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei",Arial,sans-serif;
+    }
+
+    a{
+    text-decoration: none;
+    color: black;
+    }
+
+    ul{
+    list-style: none;
+    }
+
+    div.main-content{
+    width: 100%;
+    border: 3px solid goldenrod;
+    }
+    
+
+    div.news{
+    display: flex;
+    border: 3px solid palevioletred;
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+    } 
+
+    div.news div{
+    border: 3px solid palevioletred;
+    flex-wrap: nowrap;
+    width:60%;
+    }
+
+    div.col-xs-12{
+    margin: 10px auto;
+    padding: 20px;
+    }
+
+    div.news div.col-xs-12:nth-child(1){
+    width: 30%;
+    margin: 0px 0px 0px 90px;
+    }
+
+    div.right-new div.flexn{
+    display: flex;
+    /* border: 3px solid gold; */
+    width: 100%;
+    flex-wrap: nowrap;
+    background-color: #f6f6f6;
+    }
+
+
+    div.right-new div.flexn div.list-tip{
+    /* border: 3px solid rgb(130, 24, 192); */
+    width: 85%;
+    margin-left: 30px;
+    }
+
+    div.right-new div.flexn div.date{
+    /* border: 3px solid rgb(24, 192, 150); */
+    width: 20%;
+    margin-left: auto;
+    text-align: center;
+
+    }
+    div.current-menu ul.menu{
+    line-height: 50px;
+    /* border: 1px solid gray; */
+    width: 172px;
+    }
+    div.current-menu ul.menu >li.backcolor{
+    width: 170px;
+    height: 50px;
+    background-color: gold;
+    }
+
+    ul.msg-lists{
+    line-height: 50px;
+    }
+
+    div.date ul.date{
+    line-height: 51px;
+    font-size: 12px;
+    }
+
+    div.list-tip >p,
+    div.date > p{
+    padding: 15px 0;
+    }
+
+    div.date > p{
+    padding: 15px 0;
+    text-align: center;
+    }
+
+    /* ------ 品新竹 ------- */
+
+div.concert01{
+max-width: 1200px;
+/* border: 1px solid red; */
+display: flex;
+background-color: #f6f6f6;
+width: 100%;
+margin: 9% auto;
+}
+
+    div.concert01 div.concert_image{
+    width: 800px;
+    }
+
+    div.concert01 div.concert_image > div img{
+    width: 100%;
+    z-index: 0;
+    }
+
+    div.concert01 div.viewmore{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    padding-left: 5%;
+    }
+
+div.concert01 div.viewmore div.block_pin{
+    width: 300px;
+}
+
+div.concert01 div.viewmore div.block_pin div.taste{
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    border: 10px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    top: -40px;
+    left: -80px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.658);
+    z-index: 2;
+}
+
+    div.concert01 div.viewmore div.block_pin div.taste div.bgc{
+    position: relative;
+    z-index: 2;
+    background-color: rgb(212, 170, 56,0.8);
+    height: 100%;
+    }
+
+
+div.concert01 div.viewmore div.taste div.pin{
+font-size: 35px;
+text-align: center;
+}
+
+div.concert01 div.viewmore div.taste div.HC{
+    font-size: 28px;
+    text-align: center;
+}
+
+div.concert01 div.viewmore div.taste div.HWC{
+    text-align: center;
+    font-size: 10px;
+}
+
+div.concert01 div.viewmore div.recent_info{
+    padding: 20px;
+}
+
+div.concert01 div.viewmore div.recent_info h2{
+    margin-top: 60px;
+    padding: 10px 0;
+    color: #6ba033;
+    font-size: 30px;
+}
+
+div.concert01 div.viewmore div.recent_info p{
+    line-height: 50px;
+}
+
+div.out{
+    width: 100%;
+    /* margin-bottom: 90px; */
+}
+
+
+/* ----------------table------------- */
+table.tbblock{
+    border: 3px solid gold;
+    width: 100%;
+}
+
+div.table{
+    border: 3px solid green;
+    width: 60%;
+    margin: 0 auto;
+    height: 300px;
+}
+    </style>
+
+</head>
+<body>
+    <div class="out">
+        <div class="concert01">
+            <div class="concert_image">
+                <div>
+                    <img src="./assignment2/image/pinhs.jpg" alt="">
+                </div>
+            </div>
+            
+            <div class="viewmore">
+                <div class="block_pin">
+                    <div class="taste">
+                        <div class="bgc">
+                            <div class="pin">品</div>
+                            <div class="HC">新竹</div>
+                            <div class="HWC">Hsinchu Winds Concert</div>
+                        </div>
+                    </div>
+                    <div class="recent_info">
+                        <h2>近期演出資訊</h2>
+                        <p>管弦樂團輕鬆聽<br>大新竹管樂團用心詮釋的管絃樂，值得你每天細細聆聽。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="main-content wrap">
+        <div class="news block">
+            <div class="left-menu col-xs-12">
+                <div class="current-menu">
+                    <ul class="menu">
+                        <li class="backcolor"></li>
+                        <li><a href="#">最新消息</a></li>
+                        <hr>
+                        <li><a href="#">動態消息</a></li>
+                        <hr>
+                        <li><a href="#">消息回顧</a></li>
+                        <hr>
+                        <li><a href="#">電子報</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="right-new content col-xs-12">
+                <div class="list flexn">
+                    <div class="list-tip">
+                        <!-- <p>主題</p>
+                        <ul class="msg-lists">
+                            <li><a href="#">75周年團慶特殊演出殊演出活動紀錄</a></li>
+                            <hr>
+                            <li><a href="#">75周年團慶特殊演出活動紀錄</a></li>
+                            <hr>
+                            <li><a href="#">75周年團慶特殊演出活動紀錄殊演出</a></li>
+                            <hr>
+                            <li><a href="#">75周年團慶特殊演出活動紀錄</a></li>
+                            <hr>
+                            <li><a href="#">75周年團慶特殊演出活動紀錄殊演出</a></li>
+                            <hr>
+                            <li><a href="#">75周年團慶特殊演出活動紀錄</a></li>
+                            <hr>
+                            <li><a href="#">75周年團慶特殊演出活動紀錄</a></li>
+                            <hr>
+                            <li><a href="#">75周年團慶特殊演出活動紀錄</a></li>
+                            <hr>
+                            <li><a href="#">75周年團慶特殊演出活動紀錄殊演出</a></li>
+                            <hr>
+                            <li><a href="#">75周年團慶特殊演出活動紀錄</a></li>
+                        </ul> -->
+
+                    </div>
+
+                    <!-- <div class="date">
+                        <p>發布日期</p>
+                        <ul class="date">
+                            <li>2020 / 06 / 24</li>
+                            <li>2020 / 06 / 24</li>
+                            <li>2020 / 06 / 24</li>
+                            <li>2020 / 06 / 24</li>
+                            <li>2020 / 06 / 24</li>
+                            <li>2020 / 06 / 24</li>
+                            <li>2020 / 06 / 24</li>
+                            <li>2020 / 06 / 24</li>
+                            <li>2020 / 06 / 24</li>
+                            <li>2020 / 06 / 24</li>
+                        </ul>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <div table></div>
+        <table class="tbblock">
+            <tr>
+                <th>標題一</th>
+                <th>標題二</th>
+            </tr>
+
+            <tr>
+                <td>75周年團慶特殊演出殊演出活動紀錄</td>
+                <td>2020 / 06 / 24</td>
+            </tr>
+
+            <tr>
+                <td>75周年團慶特殊演出殊演出活動紀錄</td>
+                <td>2020 / 06 / 24</td>
+
+             <tr>
+                 <td>75周年團慶特殊演出殊演出活動紀錄</td>
+                 <td>2020 / 06 / 24</td>
+             </tr>
+
+              <tr>
+                  <td>第一列第一欄</td>
+                  <td>第一列第二欄</td>
+              </tr>
+              <tr>
+                  <td>第一列第一欄</td>
+                  <td>第一列第二欄</td>
+              </tr>
+
+              <tr>
+                  <td>第一列第一欄</td>
+                  <td>第一列第二欄</td>
+              </tr>
+
+              <tr>
+                  <td>第一列第一欄</td>
+                  <td>第一列第二欄</td>
+              </tr>
+              
+              <tr>
+                  <td>第一列第一欄</td>
+                  <td>第一列第二欄</td>
+              </tr>
+              <tr>
+                  <td>第一列第一欄</td>
+                  <td>第一列第二欄</td>
+              </tr>
+              <tr>
+                  <td>第一列第一欄</td>
+                  <td>第一列第二欄</td>
+              </tr>
+              <tr>
+                  <td>第一列第一欄</td>
+                  <td>第一列第二欄</td>
+              </tr>
+        </table>
+    </div>
+    
+
+    
+</body>
+</html>

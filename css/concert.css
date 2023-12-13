@@ -1,0 +1,516 @@
+@import "./hamburger.css";
+@import "./footer_RWD.css";
+@import "./asidelink.css";
+
+
+/* <!------------------BANNER BOX----------------> */
+    div.bannerbox{
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+    position: relative;
+    }
+    
+    div.bannerbox > img{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.705);
+    object-fit: cover;
+    }
+
+
+    main{
+        width: 100%;
+        /* border: 3px solid palevioletred; */
+        margin: 0 auto;
+    }
+    /* <!------------------導覽列----------------> */
+    div.guide {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 10px 10px 20px
+    }
+
+    div.guide hr.hr{
+    margin-top: 10px;
+    width: 90%;
+    }
+    
+    /* 節目單 */
+    /* <!---------------------tittle-------------------> */
+    /* -----------/////////標頭使用code/////////////--------- */
+    div.titbox a{
+    text-decoration: none;
+    color: black;
+    }
+    
+    div.titbox{
+    margin-top: 80px;
+    margin-bottom: 10px;
+    }
+    
+    div.outside_titl{
+    width: 100%;
+    /* border: 1px solid blue; */
+    }
+    
+    div.tittle{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* border: 1px solid green; */
+    }
+    
+    div.tittle > div.icon_R,
+    div.tittle > div.tit_h3,
+    div.tittle > div.icon_L{
+    width:9%;
+    }
+    
+    div.tittle > div.tit_en{
+    width:100%
+    }
+    
+    div.tittle > div.icon_R:nth-child(1),
+    div.tittle > div.icon_L:nth-child(3){
+    width: 40px;
+    }
+    
+    div.titbox a{
+    text-decoration: none;
+    color: black;
+    }
+    
+    div.titbox{
+     margin-top: 50px
+     }
+    
+    div.outside_titl{
+    width: 100%;
+    /* border: 1px solid blue; */
+    }
+    
+    div.tittle{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* border: 1px solid green; */
+    }
+    
+    div.tittle > div.icon_R,
+    div.tittle > div.tit_h3,
+    div.tittle > div.icon_L{
+    width:20%;
+    text-align: center;
+    }
+    
+    div.tittle > div.tit_en{
+    width:100%;
+    text-align: center;
+    }   
+    
+    
+    div.stage_outer{
+    width: 100%;
+    /* border: 2px solid palevioletred; */
+    }
+    
+    /* ----文字----- */
+    div.outside_titl div.tittle div.icon_R > img,
+    div.outside_titl div.tittle div.icon_L > img{
+    width: 100%;
+    margin-top: 5px;
+    }
+    
+    div.outside_titl div.tittle div.tit_h3{
+    text-align: center;
+    line-height: 30px;
+    color: #8C720E;
+    font-size: 25px;
+    width: 300px;
+    }
+    
+    div.outside_titl div.tittle div.tit_en{
+    text-align: center;
+    color:#8C720E;;
+    font-size: 16px;
+    }
+    
+    div.buttom{
+    /* border: 1px solid palegreen; */
+    display: inline-block;
+    top: 0;
+    margin-left: 67%
+    }
+    
+    /* <!------------------音樂節目單START----------------> */
+    
+        .wrapper{
+        display: flex;
+        flex-direction: row;
+        max-width: 1000px;
+        width: 100%;
+        box-sizing: border-box;
+        /* border: 1px solid red; */
+        margin: 0 auto;
+        margin-top: 40px;
+        }
+    
+        .middle_img{
+        flex-basis: 30%;
+        }
+    
+        .left{
+        flex-basis: 10%;
+        /* background-color: skyblue; */
+        text-align: center;
+        }
+    
+        .section{
+        flex-basis: 65%;
+        background-color: #f6f6f6;
+        }
+    
+        div.wrapper div.vp{
+        margin: 20px;
+        margin: 0 auto;
+        /* height: 200px; */
+        }
+    
+    /* ----------------side文字處理-------------- */
+        p.co_ch{
+        /* border: 1px solid green; */
+        font-size: 30px;
+        color: #000000;
+        border-left: 1px solid #000000;
+        font-weight: bold;
+        writing-mode: vertical-lr;
+        margin: auto;
+        }
+    
+        p.co_en{
+        font-size: 13px;
+        color: #000000;
+        writing-mode: vertical-lr;
+        text-orientation: mixed;
+        transform: translateY(-110px);
+        font-family: "roboto";
+        }
+    
+        div.middle_img > img{
+        width: 100%;
+        /* height: 100%; */
+        }
+        
+    /* ----------------MUSIC CLASS MENU-------------- */
+    
+        div.vp > h4{
+        color: #ffffff;
+        background-color: rgb(145, 152, 159);
+        line-height: 2.2em;
+        font-size: 16px;
+        width: 25%;
+        margin-bottom: 3px;
+        /* padding: 5px; */
+        }
+    
+        div.vp > h2{
+        font-size: 26px;
+        color: #2e2e2e;
+        margin: 0;
+        line-height: 1em;
+        padding-top: 20px;
+        }
+    
+        div.center > p.time{
+        font-size: 14px;
+        line-height: 2em;
+        }
+    
+        div.center > p.mu_content{
+        font-size: 16px;
+        line-height: 2em;
+        margin: 10px 0px 10px 0px;
+        }
+    
+        div.center{
+        /* border: 2px solid palevioletred; */
+        width: 80%;
+        }
+    
+        div.mu{
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        display: inline-block;
+        text-align: center;
+        width: 20%;
+        margin: 6% 40%;
+        padding: 10px 0px;
+        }
+    
+        div.mu > a{
+            color: black;
+        }
+    
+        div.music_container{
+        /* border: 1px solid hotpink; */
+        max-width: 1200px;
+        width: 100%;
+        margin: 30px auto;
+        }
+    
+        a{
+        text-decoration: none;
+        }
+
+    /* ----------------------GO TOP---------------------- */
+    #gotop a{
+        text-decoration: none;
+    }
+
+    #gotop {
+        position:fixed;
+        z-index:90;
+        right:20px;
+        bottom:31px;
+        display:none;
+        width:40px;
+        height:40px;
+        color:#fff;
+        background: #8C720E;
+        line-height:40px;
+        border-radius:50%;
+        transition:all 0.5s;
+        text-align: center;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    }
+    
+    /* ----------------往下一頁的btn-------------- */
+        div.pagination{
+        width: 100%;
+        margin: 30px 0px 60px 0px;
+        }
+
+        div.pagination div.block{
+        /* display: inline-block; */
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        }
+
+        div.pagination div.block > ul.pagination{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        font-size: 0;
+        text-align: center;
+        }
+
+        div.pagination div.block > ul.pagination > li{
+        display: inline-block;
+        }
+
+        div.pagination div.block > ul.pagination > li > a{
+        display: inline-block;
+        text-decoration: none;
+        text-align: center;
+        padding: 10px 20px;
+        font-size: 1rem;
+        color: rgb(88, 88, 88);
+        }
+
+        div.pagination div.block > ul.pagination > li:last-child > a{
+        border-right: 1px solid #dee2e6;
+        border-radius: 0 5px 5px 0;
+        }
+
+        div.pagination div.block > ul.pagination > li:first-child > a{
+        display: inline-block;
+        border-radius: 5px 0 0 5px;
+        }
+
+        div.pagination div.block > ul.pagination > li > a:hover{
+        background-color: #E6DCCB;
+        color: #ffffff;
+        }
+
+    /* -----------------------RWD---------------------- */
+    @media screen and (max-width:250px){
+        main{
+            width: 100%;
+        }
+
+        div.middle_img > img {
+            width: 100%;
+        }
+    }
+    
+    @media screen and (max-width: 416px){
+        main{
+            max-width: 320px;
+            width: 100%;
+            /* border: 4px solid gold; */
+        }
+
+        div.middle_img > img {
+            width: 120px;
+            height: 190px;
+        }
+    }
+    
+
+    @media screen and (max-width: 1020px){
+            main{
+                width: 100%;
+                /* border: 2px solid rgb(42, 158, 58); */
+            }
+
+            div.outside_titl div.tittle div.tit_h3 {
+                display: contents;
+            }
+
+            div.tittle > div.icon_R:nth-child(1),
+            div.tittle > div.icon_L:nth-child(3){
+                margin: 0px 20px;
+                width: 30px;
+            }
+
+            .wrapper{
+                display: flex;
+                max-width: 1000px;
+                flex-flow: wrap;
+                margin: 0 auto;
+            }
+
+            .left{
+                flex-basis: 10%;
+                text-align: center;
+                display: contents;
+            }
+
+            .section {
+                flex-basis: 80%;
+                margin: 20px auto;
+            }
+
+            div.vp > h4 {
+                width: 100%;
+                margin-bottom: 3px;
+            }
+
+            p.co_en {
+                font-size: 12px;
+                transform: translateY(0px);
+            }
+
+            p.co_ch{
+                border-bottom: 1px solid #000000;
+                font-size: 30px;
+                border-bottom: 1px solid black;
+                padding: 10px;
+            }
+
+            div.buttom {
+                margin: 0 auto;
+                padding: 30px 10px 30px 30px;
+            }
+
+            div.pagination div.block > ul.pagination > li > a{
+                padding: 10px 15px;
+            }
+
+            div.guide {
+                padding: 30px 0px 10px 20px;
+            }
+
+            /* div.middle_img > img {
+                width: 120px;
+                height: 190px;
+            } */
+        }
+
+        
+    @media screen and (min-width: 1200px){
+        main{
+            width: 1140px;
+            /* border: 2px solid rgb(236, 121, 27); */
+        }
+
+        p.co_ch {
+            font-size: 30px;
+            color: #000000;
+            border-left: 1px solid #000000;
+            font-weight: bold;
+            writing-mode: vertical-lr;
+            margin: auto;
+        }
+
+    @media screen and (max-width: 1200px){
+        #aside{
+            display: none;
+        }
+    }
+
+        /* div.middle_img > img {
+            width: 288px;
+            height: 100%;
+        } */
+    }
+
+        /* div.left p.co_en{
+            font-size: 12px;
+            transform: translateY(0px);}
+        } */
+    
+    /* @media screen and (max-width:1199px){
+        .wrapper{
+        display: flex;
+        max-width: 1000px;
+        flex-flow: wrap;
+        margin: 0 auto;
+        }
+
+        .left{
+        flex-basis: 10%;
+        text-align: center;
+        display: contents;
+        }
+    
+        .section {
+            flex-basis: 100%;
+            margin: 20px auto;
+        }
+   
+        div.vp > h4 {
+            width: 100%;
+            margin-bottom: 3px;
+        }
+
+        p.co_en {
+            font-size: 12px;
+            transform: translateY(0px);}
+        }
+
+        p.co_ch{
+            border-bottom: 1px solid #000000;
+            font-size: 30px;
+            border-bottom: 1px solid black;
+            padding: 10px;
+        }
+
+        div.buttom {
+            margin: 0 auto;
+            padding: 30px 10px 30px 10px;
+        }
+
+        div.guide {
+            padding: 30px 0px 10px 20px;
+        }
+
+        div.middle_img > img {
+            width: 288px;
+            height: 100%;
+        } */
+
+        

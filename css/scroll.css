@@ -1,0 +1,133 @@
+
+  *,
+  :after,
+  :before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  p.scroll{
+    color: white;
+    font-family: arial;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  .scroll-down {
+    opacity: 1;
+    -webkit-transition: all .5s ease-in 3s;
+    transition: all .5s ease-in 3s;
+  }
+
+  .scroll-down {
+    position: absolute;
+    bottom: 90px;
+    left: 50%;
+    margin-left: -16px;
+    display: block;
+    width: 32px;
+    height: 32px;
+    border: 2px solid #FFF;
+    background-size: 14px auto;
+    border-radius: 50%;
+    z-index: 2;
+    -webkit-animation: bounce 2s infinite 2s;
+    animation: bounce 2s infinite 2s;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    transform: scale(1)
+  }
+  
+  .scroll-down:before {
+      position: absolute;
+      top: calc(50% - 8px);
+      left: calc(50% - 6px);
+      transform: rotate(-45deg);
+      display: block;
+      width: 12px;
+      height: 12px;
+      content: "";
+      border: 2px solid white;
+      border-width: 0px 0 2px 2px;
+  }
+
+  div.po_scroll{
+      /* border: 3px solid palevioletred; */
+      position: relative;
+      top: -70px;
+  }
+
+  div.scroll_block{
+    position: relative;
+    top: -150px;
+}
+
+
+  div.scroll_block p.word{
+    /* border: 1px solid gold; */
+    display: block;
+    color: white;
+    text-align: center;
+    /* left: 0 auto;
+    margin-left: 25px;
+    position: absolute;
+    bottom: 2%;
+    left: 45%; */
+  }
+
+  
+  
+  @keyframes bounce {
+    0%,
+    100%,
+    20%,
+    50%,
+    80% {
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -webkit-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+      transform: translateY(-10px);
+    }
+    60% {
+      -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+      transform: translateY(-5px);
+    }
+  }
+
+  /* ------------------RWD------------------- */
+  /* @media screen and (max-width: 575px){
+    div.scrol_block p.word {
+      left: 30%;
+      margin-left: 8px;
+    }
+    div.heading {
+      margin: 8% 0;
+  }
+  }
+
+  @media screen and (min-width: 576px) and (max-width: 767px){
+    div.scrol_block p.word {
+      left: 37%;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 991px){
+    div.scrol_block p.word {
+      left: 41%;
+    }
+}
+
+
+    @media screen and (min-width: 992px) and (max-width: 1199px){
+      div.scrol_block p.word {
+        left: 44%;
+    }
+  } */

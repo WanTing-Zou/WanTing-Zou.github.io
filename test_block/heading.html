@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', Helvetica , "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei",Arial,sans-serif;
+    /* border: 1px solid purple; */
+    }
+
+    div.heading{
+    width: 100%;
+    margin: 3% 0;
+    }
+
+    div.hd{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+
+    div.hd > div.icon_R,
+    div.hd > div.tit_h3,
+    div.hd > div.icon_L{
+    width:20%;
+    text-align: center;
+    }
+
+    div.hd > div.tit_en{
+    width:100%;
+    text-align: center;
+    }
+
+    div.hd > div.icon_R:nth-child(1),
+    div.hd > div.icon_L:nth-child(3){
+    width: 8%;
+    }
+
+/* --------------標題文字+圖片----------------- */
+    div.heading div.hd div.icon_R > img,
+    div.heading div.hd div.icon_L > img{
+    width: 30%;
+    margin-top: 5px;
+    }
+    
+    div.heading div.hd div.tit_h3{
+    text-align: center;
+    line-height: 30px;
+    color: #8C720E;
+    font-size: 25px;
+    width: 20%;
+    }
+    
+    div.heading div.hd div.tit_en{
+    text-align: center;
+    color:#8C720E;;
+    font-size: 16px;
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <div class="hd line">
+            <div class="icon_R">
+                <img src="./img/tittle_icon.png" alt="">
+            </div>
+            <div class="tit_h3">
+                <h3>品音樂的一百種方法</h3>
+            </div>
+            <div class="icon_L">
+                <img src="./img/tittle_icon.png" alt="">
+            </div>
+            <div class="tit_en">
+                <h5>PIN HSINCHU WINDS</h5>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+//PC @media 全域scrollbar
+@media screen and (min-width: 1024px)
+	::-webkit-scrollbar 
+		width: 10px
+		height: 0
+	/* Track */
+	::-webkit-scrollbar-track 
+		background: #3333331e
+	/* Handle */
+	::-webkit-scrollbar-thumb
+		height: 5px
+		border-radius: 20px
+		background: #a3a3a3
+		cursor: pointer
+	/* Handle on hover */
+	::-webkit-scrollbar-thumb:hover 
+		background: #b0b0b0
+	//jackpot
+	.page-promote-div.page-jackpot
+		.page-promote-body
+			&::-webkit-scrollbar
+				width: 10px
+			&::-webkit-scrollbar-track
+				background: #000
+				border-radius: 20px
+			&::-webkit-scrollbar-thumb
+				height: 5px
+				border-radius: 20px
+				background: #555555
+				cursor: pointer
+			&::-webkit-scrollbar-thumb:hover
+				background: #cacaca
+	//PC open game
+	.page-web
+		.page-sidebar
+			.game-menu-Lv1
+				.dropdown .dropdown-menu ul
+					&::-webkit-scrollbar-thumb
+						background: #8a6a34
+					/* Handle on hover */
+					&::-webkit-scrollbar-thumb:hover 
+						background: #63491c
+		.page-content-top
+			.page-user-info
+				.user-menu.dropdown
+					.dropdown-menu
+						&::-webkit-scrollbar-thumb
+							background: #8a6a34
+						/* Handle on hover */
+						&::-webkit-scrollbar-thumb:hover 
+							background: #63491c
+		//TMT
+		&.TMT
+			.page-sidebar
+				.game-menu-Lv1
+					.dropdown .dropdown-menu ul
+						&::-webkit-scrollbar-thumb
+							background: #7a7a7a
+						/* Handle on hover */
+						&::-webkit-scrollbar-thumb:hover 
+							background: #5a5a5a
+			.page-content-top
+				.page-user-info
+					.user-menu.dropdown
+						.dropdown-menu
+							&::-webkit-scrollbar-thumb
+								background: #7a7a7a
+							/* Handle on hover */
+							&::-webkit-scrollbar-thumb:hover 
+								background: #5a5a5a

@@ -1,0 +1,332 @@
+@import "./hamburger.css";
+@import "./footer_RWD.css";
+@import "./asidelink.css";
+
+/* <!------------------BANNER BOX----------------> */
+    div.bannerbox{
+        width: 100%;
+        height: 40vh;
+        overflow: hidden;
+        position: relative;
+    }
+
+    div.bannerbox > img{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.705);
+        object-fit: cover;
+    }
+    
+/* <!------------------導覽列----------------> */
+    div.guide {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 10px 30px 20px;
+    }
+    
+    div.guide hr.hr{
+    margin-top: 10px;
+    width: 90%;
+    }
+
+/* <!------------------標題開始-----------------> */
+    div.heading{
+    width: 100%;
+    margin: 3% 0;
+    }
+    
+    div.hd{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    
+    div.hd > div.icon_R,
+    div.hd > div.tit_h3,
+    div.hd > div.icon_L{
+    width:20%;
+    text-align: center;
+    }
+    
+    div.hd > div.tit_en{
+    width:100%;
+    text-align: center;
+    }
+    
+    div.hd > div.icon_R:nth-child(1),
+    div.hd > div.icon_L:nth-child(3){
+    width: 30px;
+    }
+    
+/* --------------標題文字+圖片----------------- */
+    div.heading div.hd div.icon_R > img,
+    div.heading div.hd div.icon_L > img{
+    width: 100%;
+    margin-top: 5px;
+    }
+    
+    div.heading div.hd div.tit_h3{
+    text-align: center;
+    line-height: 30px;
+    color: #8C720E;
+    font-size: 18px;
+    width: 20%;
+    }
+    
+    div.heading div.hd div.tit_en{
+    text-align: center;
+    color:#8C720E;;
+    font-size: 16px;
+    }
+
+/* --------------標題文字+圖片----------------- */
+    main.main{
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        /* height: 2300px; */
+    }
+    
+    main.main div.contenter{
+        max-width: 1000px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    div.text_block{
+        width: 60%;
+        margin: 5% auto;
+    }
+
+    div.text_block > span{
+        line-height: 40px;
+    }
+
+    div.text_block > h2{
+        text-align: center;
+        font-size: 1.17em;
+    }
+
+    div.tit_h3{
+        width: 40%;
+    }
+
+    main div.re_tittle2{
+        /* font-size: 20px; */
+        padding-bottom: 20px;
+        text-align: center;
+        margin-top: 6%;
+    }
+        
+    main div.noticeblock{
+        padding:20px;
+        text-align: center;
+        border: 1px solid gray;
+        width: 60%;
+        margin: 0 auto;
+        font-size: 14px;
+    }
+        
+    main div.white{
+        width: 100%;
+        border-bottom: 0.1px solid rgb(153, 153, 153);
+        margin-top: 40px;
+    }
+        
+      /* --------問券區-------- */
+    
+      div.form form{
+        display: flex;
+        flex-wrap: wrap;
+        /* height: 900px; */
+        width: 100%;
+        justify-content: space-between;
+        margin: 2% 0;
+        /* border: 1px solid red; */
+    }
+    
+    
+    div.form form div.d01,
+    div.form form div.d02,
+    div.form form .d03,
+    div.form form div.d04,
+    div.form form .d05,
+    div.form form div.d06,
+    div.form form div.d07,
+    div.form form div.d08,
+    div.form form div.d09,
+    div.form form div.d10,
+    div.form form div.d11,
+    div.form form div.d12{
+        width: 40%;
+        height: 50px;
+        border-radius: 6px;
+        /* border: solid 1px red; */
+        margin: 5px auto;
+    }
+    
+    div.form form div.d13{
+        /* border: solid 3px rgb(75, 14, 14); */
+        width: 100%;
+        border-radius: 6px;
+        margin: 0% 5%;
+        height: 50px;
+        margin-top: 5%;
+    }
+    
+    div.form form div.d14{
+        width: 100%;
+        height: 180px;
+        border-radius: 6px;
+        font-size: 17px;
+        resize: none;
+        font-size: 22px;
+        margin: 0% 5%;
+
+    }
+    
+    div.form form div.notes{
+        border: 1px solid #ccc;
+    }
+    
+    form div.d01 > label,
+    form div.d02 > label,
+    form div.d05 > label,
+    form div.d06 > label,
+    form div.d09 > label,
+    form div.d10 > label,
+    form div.d13 > label{
+        font-size: 19px;
+        margin-top: 20px;
+        line-height: 50px;
+    }
+    
+    div.form form input[type="text"]{
+        width: 100%;
+        height: 50px;
+        border-radius: 6px;
+        font-size: 17px;
+        border: 1px solid #ccc;
+        padding: 10px;
+    }
+
+    
+    div.form form div.d14 > textarea{
+        width: 100%;
+        height: 180px;
+        border-radius: 6px;
+        font-size: 17px;
+        border: 1px solid #ccc;
+        resize: none;
+        font-size: 22px;
+    }
+    
+    div.item_block{
+        margin: 3% auto;
+    }
+    
+    div.item_block > button{
+        /* padding: 30px 100px 30px 100px; */
+        font-size: 16px;
+        margin:auto;
+    }
+/* ----------------------GO TOP---------------------- */
+    #gotop a{
+        text-decoration: none;
+    }
+
+    #gotop {
+        position:fixed;
+        z-index:90;
+        right:20px;
+        bottom:31px;
+        display:none;
+        width:40px;
+        height:40px;
+        color:#fff;
+        background: #8C720E;
+        line-height:40px;
+        border-radius:50%;
+        transition:all 0.5s;
+        text-align: center;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    }
+
+/* -----------------------------RWD--------------------------- */
+    main{
+        width: 100;
+        /* border: 3px solid red; */
+        margin: 0 auto;
+    }
+  
+    @media screen and (max-width: 575px){
+        main{
+            width: 100%;
+            /* border: 1px solid purple; */
+        }
+
+        div.hd > div.icon_R:nth-child(1),
+        div.hd > div.icon_L:nth-child(3){
+            display: none;
+        }
+
+        div.heading div.hd div.tit_h3 {
+            width: 50%;
+        }
+        #aside{
+            display: none;
+        }
+        form div.d01 > label, 
+        form div.d02 > label, 
+        form div.d05 > label, 
+        form div.d06 > label, 
+        form div.d09 > label, 
+        form div.d10 > label, 
+        form div.d13 > label {
+            font-size: 13px;
+        }
+
+        div.form form input[type="text"] {
+            font-size: 10px;
+        }
+    }
+  
+    @media screen and (min-width: 576px) and (max-width: 767px){
+        main{
+            width: 540px;
+            border: 2px solid rgb(47, 134, 206);
+        }
+        #aside{
+            display: none;
+        }
+    }
+  
+    @media screen and (min-width: 768px) and (max-width: 991px){
+        main{
+            width: 720px;
+            /* border: 2px solid rgb(42, 158, 58); */
+        }
+        #aside{
+            display: none;
+        }
+    }
+  
+  
+    @media screen and (min-width: 992px) and (max-width: 1199px){
+    main{
+        width: 960px;
+        /* border: 2px solid rgb(245, 223, 29); */
+        }
+        #aside{
+            display: none;
+        }
+    }
+      
+    @media screen and (min-width: 1200px){
+        main{
+            width: 1140px;
+            /* border: 2px solid rgb(236, 121, 27); */
+        }
+    }
+  

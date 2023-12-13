@@ -1,0 +1,253 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html, body{
+	font-family: Arial, Helvetica,  sans-serif;
+	font-size: $fontSize;
+	color: $fontColor;
+}
+
+h2{
+	align-items: center;
+	box-sizing: border-box;
+	border-bottom: 1px solid #F1F1F1;
+	padding: 0 10px;
+	background-color: #fff;
+	font-size: $fontSize-M;
+	line-height: 34px;
+	color: $colorSec;
+	display: flex;
+	.textLevelSec{margin: 0 4px;}
+}
+
+h4{
+	font-size: $fontSize;
+	font-weight: normal;
+	line-height: 26px;
+	color: $colorSec;
+}
+
+a{
+	text-decoration: none;
+	outline: none; //for Firefox
+    hlbr:expression(this.onFocus=this.blur()); //for IE
+}
+
+button{
+	background-color: none;
+	border: 0;
+}
+
+iframe{
+	border: none;
+}
+input:focus{outline:none}
+
+//***************************************************//
+//Clear
+.clearfix:after{ 
+    content: "";
+    display: block;
+    clear: both;
+}
+.clearfix { zoom: 1; }
+.clear{clear: both;}
+
+//Float Set
+.float-L{float: left;}
+.float-R{float: right;}
+
+//Align Set
+.align-L{text-align: left;}
+.align-R{text-align: right;}
+.align-C{text-align: center;}
+
+//display
+.dis-B{display: block;}
+.dis-F{display: flex;}
+.dis-InB{display: inline-block;}
+.dis-InF{display: inline-flex;}
+
+//***************************************************//
+//左右分開且置中
+.setFlex-between{
+	justify-content: space-between;
+	align-items: center;
+	display: flex;	
+}
+
+//上下左右都置中
+.setFlex-center{
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+//上下置中
+.setFlex-alignCenter{
+	align-items: center;
+	display: flex;
+}
+
+//放在最右邊
+.setFlex-alignEnd{
+	justify-content: flex-end;
+	align-items: center;
+	display: flex;
+}
+
+//***************************************************//
+// 從左邊開始且置中 - reportDaily Tab
+.table-sheet{
+	justify-content: start;
+	align-items: center;
+	display: flex;
+	background-color: #f1f1f1;
+	border-radius: 5px 5px 0 0;
+	.btnRefreshText {
+		margin-left: 5px;
+	}
+	.flex-end{
+		flex: 1;
+		display: flex;
+		justify-content: flex-end;
+		align-items: flex-end;
+	}
+}
+
+//***************************************************//
+.wrapper{
+	position: relative;
+	min-width: 1400px;
+	box-sizing: border-box;
+	background-color: #F1F1F1;
+	display: flex;
+	min-height: 100vh;
+}
+
+
+//***************************************************//
+.fixed{
+	position: fixed;
+	border-top: 10px solid #F1F1F1;
+}
+
+//左右留白
+//newSub,subList,sampleList,reportStatement
+.fixedPadding{padding: 64px 8% 60px;}
+//reportHistory
+.fixedPadding-S{padding: 64px 1% 60px;}
+//reportCurrent
+.fixedPadding-M{padding: 64px 12% 60px;}
+
+//myProfile,newMember,newSample,
+// .fixedMargin{margin-top: 54px;}
+.padding-M{padding: 24px 3%;}
+.padding-S{padding: 24px 1%;}
+.padding-basic {padding: 0;}
+
+//***************************************************//
+//型式規範
+.basic01{
+	dl{
+		width: 200px;
+		margin-bottom: 12px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+
+	dt{
+		font-size: $fontSize-S;
+		font-weight: normal;
+		line-height: 22px;
+		color: #666;
+		.textRadio{
+			font-size: $fontSize-S;
+			line-height: 20px;
+		}
+	}
+
+	dd {
+		margin-bottom: 12px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+
+	input,.info,.select,dd.error{
+		width: 180px;
+		&.w-220px{
+			width: 220px;
+		}
+	}
+	&.currency{
+		margin-bottom: 5px;
+	}
+	input.w-100per{
+		width: 100%;
+	}
+}
+
+//basic01群組
+.basic01-group{
+	margin-bottom: 14px;
+	&:last-child{margin-bottom: 0;}
+	display: flex;
+
+	.basic01{
+		margin-right: 30px;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+}
+
+//dt空間visibility:hidden; 用於只checkBox
+.basic02{
+	dt{
+		visibility:hidden;
+		line-height: 22px;
+	}
+
+	dd{
+		height: 30px;
+		align-items: center;
+		display: flex;
+	}
+}
+
+//***************************************************//
+//分格區塊:虛線
+.borderDottedMP{
+	margin-bottom: 14px;
+	border-bottom: 1px dotted $lineGray;
+	padding-bottom: 14px;
+}
+
+//實線
+.borderSolid{border: 1px solid $lineGray;}
+.borderSolid-B{border-bottom: 1px solid $lineGray;}
+.borderSolid-T{border-top: 1px solid $lineGray;}
+.borderSolid-R{border-right: 1px solid $lineGray;}
+.borderSolid-L{border-left: 1px solid $lineGray;}
+
+//虛線
+.borderDotted{border: 1px dotted $lineGray;}
+.borderDotted-R{border-right: 1px dotted $lineGray;}
+.borderDotted-L{border-left: 1px dotted $lineGray;}
+.borderDotted-B{border-bottom: 1px dotted $lineGray;}
+
+//
+.borderNone{border:none;}
+.borderNone-T{border-top: none;}
+.borderNone-L{border-left: none;}
+.borderNone-R{border-right: none;}
+
+//***************************************************//
+//全域list 移除樣式 //Transcation Report New Edit - - 2021/05/14 Wendy
+ul{
+	list-style: none;
+}

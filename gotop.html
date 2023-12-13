@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GO TOP</title>
+    <link rel="stylesheet" href="./css/gotop.css">
+    <link rel="stylesheet" href="./css/fontawesome/all.min.css">
+    <link rel="stylesheet" href="./css/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<style>
+/* ----------------------GO TOP---------------------- */
+body{
+    height: 300vh;
+    background-color: burlywood;
+}
+    #gotop a{
+        text-decoration: none;
+    }
+
+    #gotop {
+        position:fixed;
+        z-index:90;
+        right:20px;
+        bottom:31px;
+        display:none;
+        width:40px;
+        height:40px;
+        color:#fff;
+        background: #8C720E;
+        line-height:40px;
+        border-radius:50%;
+        transition:all 0.5s;
+        text-align: center;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    }
+</style>
+
+
+<body>
+<!-- -------------------------GO TOP------------------------- -->
+    <a href="#" id="gotop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/fontawesome/all.js"></script>
+    <script src="./js/AOS-MASTER/aos.js"></script>
+     
+    <script type="text/javascript">
+        //程式參考來源:咖尼馬管家的筆記(jquery-goTop)
+            $(function() {
+                /* 按下GoTop按鈕時的事件 */
+                $('#gotop').click(function(){
+                    $('html,body').animate({ scrollTop: 0 }, 'slow');   /* 返回到最頂上 */
+                    return false;
+                });
+                
+                /* 偵測卷軸滑動時，往下滑超過400px就讓GoTop按鈕出現 */
+                $(window).scroll(function() {
+                    if ( $(this).scrollTop() > 400){
+                        $('#gotop').fadeIn();
+                    } else {
+                        $('#gotop').fadeOut();
+                    }
+                });
+            });
+            </script>   
+</body>
+</html>
